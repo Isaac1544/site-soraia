@@ -1,0 +1,46 @@
+# Segredos e configuracoes locais
+.env
+.env.*
+!.env.example
+*.pem
+*.p12
+*.pfx
+*.key
+id_rsa*
+id_ed25519*
+credentials*.json
+service-account*.json
+
+# Dados pessoais, formularios e copias locais
+private/**
+!private/README.md
+submissions/
+uploads/
+backups/
+*.sqlite
+*.sqlite3
+*.db
+
+# Artes e fotos ainda sem aprovacao para publicacao
+WhatsApp Image*.jpeg
+public/images/referencias/
+
+# Dependencias, compilacao e arquivos da maquina
+node_modules/
+.next/
+.astro/
+.cache/
+dist/
+build/
+coverage/
+.vercel/
+.wrangler/
+*.log
+.DS_Store
+Thumbs.db
+
+# Configuracoes locais do agente/editor
+.codex/
+.agents/
+.vscode/
+.idea/
