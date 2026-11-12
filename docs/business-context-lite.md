@@ -1,12 +1,27 @@
 # Business Context Lite — Soraia Medeiros
 
-> Versão 0.3 — 10/11/2026. Fonte: resposta escrita da cliente recebida pelo desenvolvedor e decisões de planejamento posteriores. Fatos profissionais e operacionais são declarações da cliente; revisão final de texto e publicação permanece pendente. **Implementação do site ainda não iniciada, a pedido do desenvolvedor.**
+> Versão 0.4 — 12/11/2026. Fontes: respostas escritas da cliente recebidas pelo desenvolvedor, inclusive atualização de posicionamento em 12/11, e decisões de planejamento posteriores. Fatos profissionais e operacionais são declarações da cliente; revisão final de texto e publicação permanece pendente. **Implementação do site ainda não iniciada.**
 
 ## Negócio e público
 
 Soraia Medeiros — Psicóloga Clínica, CRP 06/216738. Atendimento psicológico individual em português para adultos, com sessões de 50 minutos. Atende online e presencialmente em São Paulo (Avenida Paulista) e em Barueri (Alphaville). O site deve apresentar sua atuação de modo profissional, acolhedor e sóbrio; facilitar contato e solicitação de atendimento; ampliar o alcance a brasileiros residentes no exterior.
 
-Temas declarados: ansiedade, estresse, esgotamento emocional, relacionamentos, transições de carreira, insegurança e autoconhecimento. A experiência de aproximadamente 19 anos no mercado corporativo, sobretudo nas áreas comercial e de gestão, faz parte do posicionamento para trabalho, liderança e carreira.
+O atendimento e a linguagem devem permanecer **amplos e inclusivos**: o site não deve afirmar nem sugerir que Soraia atende exclusivamente mulheres. Mulheres adultas são o público de maior interesse, com atenção a desafios emocionais, profissionais, familiares e pessoais, autoconhecimento, equilíbrio e qualidade de vida. A identidade e os exemplos podem dialogar especialmente com a trajetória feminina, preservando uma porta de entrada clara para outras pessoas adultas.
+
+Conceito central proposto pela cliente, a ser usado com contexto inclusivo na apresentação dos serviços:
+
+> Psicologia para mulheres que desejam compreender suas emoções, atravessar mudanças e construir uma vida com mais significado.
+
+Temas de atuação informados pela cliente:
+
+1. Ansiedade, estresse e esgotamento emocional: sobrecarga, excesso de responsabilidades, limites e burnout.
+2. Transição de carreira e mudanças de vida: recomeços, redescoberta profissional, insegurança, propósito e novos ciclos.
+3. Relacionamentos familiares e afetivos: conflitos, maternidade, vínculos, limites e dependência emocional.
+4. Menopausa e maturidade feminina: mudanças emocionais, identidade, autoestima e adaptação.
+5. Envelhecimento e longevidade emocional: autonomia, novos projetos, solidão e ressignificação da vida.
+6. Autoconhecimento e autoestima: identidade, desenvolvimento pessoal, segurança emocional e autonomia.
+
+A experiência de aproximadamente 19 anos no mercado corporativo, sobretudo nas áreas comercial e de gestão, faz parte do posicionamento para trabalho, liderança e carreira. Os temas acima descrevem assuntos possíveis de acolhimento, sem afirmar especialização formal, diagnóstico, método exclusivo ou resultado garantido.
 
 ## Credenciais e linguagem pública
 
@@ -54,9 +69,9 @@ Solicitações devem chegar ao e-mail da profissional, com acesso restrito. Dest
 
 ## Identidade e descoberta
 
-Visual aprovado em conceito: sofisticado, contemporâneo, minimalista e acolhedor, em tons neutros, bege e off-white, detalhes suaves em dourado ou verde, tipografia refinada, fotos naturais e espaço visual. A paleta exata anterior permanece proposta. A cliente enviará fotos originais; as artes atuais são referências.
+Visual aprovado em conceito: profissional, acolhedor, sofisticado, contemporâneo e minimalista, em tons neutros, bege e off-white, detalhes suaves em dourado ou verde, tipografia refinada, fotos naturais e espaço visual. Dar apelo especial ao público feminino sem usar linguagem ou elementos que comuniquem exclusividade. A paleta exata anterior permanece proposta. A cliente enviará fotos originais; as artes atuais são referências.
 
-SEO pretendido: buscas por psicóloga em São Paulo, Avenida Paulista, Alphaville/Barueri, online, online para brasileiros no exterior, ansiedade e estresse. Criar páginas úteis e distintas, SEO técnico e Search Console. Blog inicialmente preparado para o futuro. Presença no Google não implica posição garantida.
+SEO pretendido: buscas por psicóloga em São Paulo, Avenida Paulista, Alphaville/Barueri, online, online para brasileiros no exterior e temas informados pela cliente. No MVP, apresentar os seis temas em conteúdo útil e revisado, sem criar seis páginas superficiais apenas por palavra-chave. Páginas temáticas ou artigos entram quando houver conteúdo próprio aprovado. Criar páginas úteis e distintas, SEO técnico e Search Console. Blog inicialmente preparado para o futuro. Presença no Google não implica posição garantida.
 
 ## SEO e caminho recomendado
 
@@ -68,7 +83,7 @@ SEO pretendido: buscas por psicóloga em São Paulo, Avenida Paulista, Alphavill
 4. **Depois do formulário:** criar agenda com horários reais, conversão de fuso e aprovação manual. O painel administrativo exige autenticação e prevenção de conflitos de horário.
 5. **Crescimento:** publicar artigos revisados pela Soraia e acompanhar buscas e páginas no Search Console para orientar melhorias de conteúdo.
 
-**Capacidade de execução:** o desenvolvedor e o assistente podem construir o site com apoio de IA, usando este contexto e o [backlog](backlog-e-custos.md) como especificação, revisando cada entrega antes de publicar. A escolha da hospedagem e a aprovação das etapas permanecem abertas. A implementação não deve começar nesta fase de planejamento.
+**Capacidade de execução:** o desenvolvedor e o assistente podem construir o site com apoio de IA, usando este contexto, o [backlog](backlog-e-custos.md) e o [Technical Context Lite](technical-context-lite.md) como especificação, revisando cada entrega antes de publicar. A escolha final da hospedagem e a aprovação das etapas permanecem abertas. A implementação não deve começar nesta fase de planejamento.
 
 ## Sucesso e decisões abertas
 

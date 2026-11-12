@@ -1,6 +1,6 @@
 # Backlog, complexidade e custos — Soraia Medeiros
 
-> Planejamento v0.2, 10/11/2026. Horas indicam complexidade, sem atribuir custo à mão de obra. Orçamento abaixo considera apenas serviços e ferramentas, inclusive construção com IA. Preços de fornecedores consultados nesta data; revisar antes de contratar.
+> Planejamento v0.3, 12/11/2026. Horas indicam complexidade, sem atribuir custo à mão de obra. Orçamento abaixo considera apenas serviços e ferramentas, inclusive construção com IA. Preços de fornecedores consultados em 10–12/11/2026; revisar antes de contratar. Ver [Business Context Lite](business-context-lite.md), [Technical Context Lite](technical-context-lite.md) e [guia de CI/CD](ci-cd-guia.md).
 
 ## Critério de complexidade
 
@@ -16,9 +16,9 @@ Esforço em **horas de trabalho**, apenas para comparar dificuldade e planejar e
 
 | ID | Tarefa pequena / critério de pronto | Grau | Horas | Recursos |
 |---|---|---:|---:|---|
-| B00 | Consolidar fatos da cliente, status e conteúdo publicável | Baixa | 2–3 | Dev + Soraia |
-| B01 | Definir mapa das páginas, mensagens e CTAs da primeira versão | Baixa | 3–5 | Dev + Soraia |
-| B02 | Definir hospedagem, acesso ao domínio, contas e responsável por custos | Média | 2–4 | Dev + titular das contas |
+| B00 | Consolidar fatos da cliente, status e conteúdo publicável, incluindo foco feminino inclusivo e seis temas de atuação | Baixa | 2–3 | Dev + Soraia |
+| B01 | Definir mapa das páginas, mensagens e CTAs da primeira versão; aprovar frase central em contexto inclusivo | Baixa | 3–5 | Dev + Soraia |
+| B02 | Aprovar Technical Context Lite, hospedagem, acesso ao domínio, contas e responsável por custos | Média | 2–4 | Dev + titular das contas |
 
 **Total:** 7–12 h. Custo externo obrigatório: R$ 0 nesta etapa.
 
@@ -26,12 +26,12 @@ Esforço em **horas de trabalho**, apenas para comparar dificuldade e planejar e
 
 | ID | Tarefa pequena / critério de pronto | Grau | Horas | Recursos |
 |---|---|---:|---:|---|
-| B10 | Estrutura do projeto, componentes e configuração central de contatos | Baixa | 4–6 | Dev |
+| B10 | Estrutura Astro/TypeScript proposta, configuração central de contatos, GitHub Actions para CI e preview/deploy por Git | Média | 4–6 | Dev + contas GitHub/Cloudflare |
 | B11 | Layout responsivo para celular e computador, com identidade visual aprovada | Média | 8–14 | Dev + Soraia; fotos originais |
-| B12 | Redigir e montar páginas essenciais: início, sobre, atuação/modalidades, locais e contato | Média | 8–12 | Dev + revisão da Soraia |
+| B12 | Redigir e montar páginas essenciais: início, sobre, atuação/modalidades, locais e contato; apresentar seis temas com conteúdo próprio, sem seis páginas vazias | Média | 8–12 | Dev + revisão da Soraia |
 | B13 | Integrar links WhatsApp, Instagram e e-mail; navegação e CTAs acessíveis | Baixa | 3–5 | Dev |
 | B14 | SEO técnico: títulos, descrições, canonical, sitemap, robots, dados factuais e links internos | Média | 5–8 | Dev |
-| B15 | Aviso de privacidade compatível com o funcionamento real, revisão, publicação, DNS e Search Console | Média | 5–8 | Dev + Soraia + revisão de privacidade |
+| B15 | Aviso de privacidade compatível com o funcionamento real, revisão do preview, publicação, DNS, verificação final e Search Console | Média | 5–8 | Dev + Soraia + revisão de privacidade |
 
 **Total:** 33–53 h. **Acumulado até site no ar:** 40–65 h. Entrega: site clicável e indexável, com contato manual. Não exibir agenda fictícia nem formulário que apenas simula envio.
 
@@ -73,7 +73,7 @@ Esforço em **horas de trabalho**, apenas para comparar dificuldade e planejar e
 
 ## Custos sem mão de obra: cenário econômico com IA
 
-**Arquitetura de referência para cálculo:** gerar/editar o código com Google AI Studio e revisão humana; hospedar o site público estático em Cloudflare Pages; acrescentar Cloudflare Workers para o formulário e a API da agenda, Resend para e-mails e Cloudflare D1 para os slots. São exemplos de serviços, não escolhas fechadas. O site não precisa chamar uma IA quando o visitante o acessa; assim, o custo de inferência de IA em produção pode ser **R$ 0**.
+**Arquitetura de referência para cálculo:** gerar/editar código Astro/TypeScript com apoio de IA e revisão humana; manter especificação e código no GitHub; hospedar o site público estático em Cloudflare Pages; acrescentar Pages Functions/Cloudflare Workers para o formulário e a API da agenda, Resend para e-mails e Cloudflare D1 para os slots. São recomendações ainda não aprovadas, detalhadas no [Technical Context Lite](technical-context-lite.md). O site não precisa chamar uma IA quando o visitante o acessa; assim, o custo de inferência de IA em produção pode ser **R$ 0**.
 
 | Estado do projeto | Gasto inicial obrigatório | Mensal mínimo com cotas gratuitas | Cenário pago opcional | Primeiro ano no cenário mínimo |
 |---|---:|---:|---:|---:|
@@ -103,7 +103,7 @@ Não inserir respostas de pacientes, contatos recebidos ou outros dados pessoais
 | Item | Quando | Referência atual | Observação |
 |---|---|---|---|
 | Domínio `.com.br` | Etapa 1 e anual | R$ 40/ano no [Registro.br](https://registro.br/dominio/) | Disponibilidade de `soraiamedeiros.com.br` não verificada; registrar em nome da cliente. |
-| Hospedagem estática | Etapa 1 | Pode começar em R$ 0/mês com plano gratuito de plataforma compatível; [Cloudflare Pages](https://developers.cloudflare.com/pages/functions/pricing/) é referência | Limites e condições do fornecedor devem ser conferidos na escolha final. |
+| Hospedagem estática | Etapa 1 | Pode começar em R$ 0/mês no [Cloudflare Pages Free](https://developers.cloudflare.com/pages/platform/limits/) | 500 builds/mês no plano Free conforme documentação consultada; confirmar limites e condições na contratação. |
 | Search Console | Etapa 1 | R$ 0, [serviço gratuito do Google](https://support.google.com/webmasters/answer/9128668) | Indexação/posição não são garantidas. |
 | IA de construção | Etapas 0–4 | [Google AI Studio](https://ai.google.dev/gemini-api/docs/billing): R$ 0 dentro dos limites gratuitos; recurso pago por uso quando ativado | Não há assinatura de IA obrigatória no cenário econômico. |
 | Envio transacional de e-mail | Etapa 2+ | [Resend](https://resend.com/pricing): US$ 0 até 3.000 e-mails/mês e 100/dia; Pro US$ 20/mês | Exemplo, não fornecedor escolhido. Confirmar elegibilidade, limites, retenção e tratamento de dados antes de contratar. |
