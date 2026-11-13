@@ -67,6 +67,14 @@ Para repositório privado no GitHub Free, considerar a franquia de Actions e as 
 
 ### Vídeos
 
+- **Trilha em português, na ordem do trabalho:**
+  1. [Dev Soutinho — O que é CI e CD? Como usar GitHub Actions?](https://www.youtube.com/watch?v=IKjcdYQvcDo) — conceito de esteira, checagens e deploy. Use para entender o fluxo inteiro antes do YAML.
+  2. [Rocketseat — Configurando CI em projeto open-source com GitHub Actions](https://www.youtube.com/watch?v=IPLTUlRFxgo) — checagens disparadas por commit/PR. O vídeo é de 2020; conferir a sintaxe e versões atuais na documentação do GitHub.
+  3. [Escola de Aplicativos — Cloudflare Workers: primeiro deploy (aula 02)](https://www.youtube.com/watch?v=QGdUXEt9QM4) — publicação no provedor escolhido, Static Assets e segredos. É demonstração de deploy, não substitui a configuração específica do Astro.
+  4. [Escola de Aplicativos — playlist Cloudflare Workers](https://www.youtube.com/playlist?list=PLWs5cc223oy0) — depois da aula 02, consultar aulas de D1 e proteção apenas quando formulário/agenda entrarem no backlog ativo.
+
+  Exercício para este projeto: abrir PR → observar CI no GitHub → revisar preview Cloudflare → merge em `main` → conferir produção e rollback. O roteiro completo está acima. [Roteiro do curso Cloudflare em português](https://www.escoladeaplicativos.com.br/blog/curso-gratis-cloudflare-workers).
+
 - [GitHub for Beginners: How to use GitHub Actions](https://www.youtube.com/watch?v=BQrohJ3PT7I) — vídeo do GitHub; começar por workflow e automação de checks. [Artigo oficial com roteiro](https://github.blog/developer-skills/github/github-for-beginners-getting-started-with-github-actions/).
 - [Cloudflare Developers: Astro no Cloudflare](https://www.youtube.com/watch?v=4P5xryoHUuM) — demonstra Astro e publicação; a parte de API/KV é **etapa futura**, além do MVP.
 - [Google Search Central: introdução ao canal](https://www.youtube.com/watch?v=lutawRrVTHw) — porta de entrada para vídeos oficiais sobre descoberta no Google; complementar com o guia de SEO acima.
