@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1250" height="580" viewBox="0 0 1250 580" role="img" aria-labelledby="title desc">
+  <title id="title">Paleta de cores do site Soraia Medeiros</title>
+  <desc id="desc">Nove amostras: marfim, branco quente, bege areia, verde oliva, grafite, verde sálvia, dourado fosco, verde de links e verde grafite para texto secundário.</desc>
+  <rect width="1250" height="580" fill="#FFFDF9"/>
+  <text x="60" y="65" fill="#2F342F" font-family="Georgia, serif" font-size="38">Soraia Medeiros</text>
+  <text x="61" y="101" fill="#535C54" font-family="Arial, sans-serif" font-size="18">Paleta base do site · 13/11/2026</text>
+
+  <g font-family="Arial, sans-serif" font-size="17" fill="#2F342F">
+    <rect x="54" y="126" width="216" height="210" rx="14" fill="#FFFDF9" stroke="#C9C6BD"/>
+    <rect x="62" y="134" width="200" height="142" rx="9" fill="#F7F4EF"/>
+    <text x="68" y="302">Marfim</text><text x="68" y="326" font-size="15" fill="#535C54">#F7F4EF</text>
+
+    <rect x="284" y="126" width="216" height="210" rx="14" fill="#FFFDF9" stroke="#C9C6BD"/>
+    <rect x="292" y="134" width="200" height="142" rx="9" fill="#FFFDF9" stroke="#D8D2C8"/>
+    <text x="298" y="302">Branco quente</text><text x="298" y="326" font-size="15" fill="#535C54">#FFFDF9</text>
+
+    <rect x="514" y="126" width="216" height="210" rx="14" fill="#FFFDF9" stroke="#C9C6BD"/>
+    <rect x="522" y="134" width="200" height="142" rx="9" fill="#E9DFD1"/>
+    <text x="528" y="302">Bege areia</text><text x="528" y="326" font-size="15" fill="#535C54">#E9DFD1</text>
+
+    <rect x="744" y="126" width="216" height="210" rx="14" fill="#FFFDF9" stroke="#C9C6BD"/>
+    <rect x="752" y="134" width="200" height="142" rx="9" fill="#354437"/>
+    <text x="758" y="302">Verde oliva</text><text x="758" y="326" font-size="15" fill="#535C54">#354437</text>
+
+    <rect x="974" y="126" width="216" height="210" rx="14" fill="#FFFDF9" stroke="#C9C6BD"/>
+    <rect x="982" y="134" width="200" height="142" rx="9" fill="#2F342F"/>
+    <text x="988" y="302">Grafite</text><text x="988" y="326" font-size="15" fill="#535C54">#2F342F</text>
+
+    <rect x="54" y="350" width="216" height="210" rx="14" fill="#FFFDF9" stroke="#C9C6BD"/>
+    <rect x="62" y="358" width="200" height="142" rx="9" fill="#A5AA99"/>
+    <text x="68" y="526">Verde sálvia</text><text x="68" y="550" font-size="15" fill="#535C54">#A5AA99</text>
+
+    <rect x="284" y="350" width="216" height="210" rx="14" fill="#FFFDF9" stroke="#C9C6BD"/>
+    <rect x="292" y="358" width="200" height="142" rx="9" fill="#B49A70"/>
+    <text x="298" y="526">Dourado fosco</text><text x="298" y="550" font-size="15" fill="#535C54">#B49A70</text>
+
+    <rect x="514" y="350" width="216" height="210" rx="14" fill="#FFFDF9" stroke="#C9C6BD"/>
+    <rect x="522" y="358" width="200" height="142" rx="9" fill="#265D4A"/>
+    <text x="528" y="526">Verde de links</text><text x="528" y="550" font-size="15" fill="#535C54">#265D4A</text>
+
+    <rect x="744" y="350" width="216" height="210" rx="14" fill="#FFFDF9" stroke="#C9C6BD"/>
+    <rect x="752" y="358" width="200" height="142" rx="9" fill="#535C54"/>
+    <text x="758" y="526">Texto secundário</text><text x="758" y="550" font-size="15" fill="#535C54">#535C54</text>
+  </g>
+</svg>

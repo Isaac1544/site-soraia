@@ -27,7 +27,7 @@ Já é possível criar o projeto Astro, componentes, estilos, rotas, `package-lo
 ## Preparação necessária antes de publicar
 
 1. **Conteúdo e ética:** Soraia confirmar o nome completo ou social a exibir com a palavra “psicóloga” e o CRP, e aprovar apresentação, seis temas, alcance do atendimento online, modalidades, endereços divulgáveis, frase principal em contexto inclusivo e todos os CTAs. Não anunciar atendimento internacional irrestrito sem validar as regras aplicáveis.
-2. **Identidade visual:** obter fotografias originais e autorização de uso; confirmar paleta, tipografia, eventual logotipo, créditos e textos alternativos. As artes recebidas servem como referência.
+2. **Identidade visual:** usar a [paleta base definida](knowledge-base/identidade-e-ativos.md) no protótipo e obter revisão visual da cliente; receber fotografias originais e autorização de uso; confirmar tipografia, eventual logotipo, créditos e textos alternativos. As artes recebidas servem como referência.
 3. **Domínio e contas:** confirmar se ela já possui domínio; se não, reconferir disponibilidade e registrar o nome escolhido em titularidade dela. Criar/usar conta Cloudflare da cliente, conceder acesso ao desenvolvedor, integrar repositório, configurar DNS e HTTPS. Ver [domínio e contas](dominio-e-contas.md).
 4. **Privacidade:** mapear hospedagem, logs, cookies e recursos externos realmente presentes; revisar e aprovar aviso de privacidade com canal de direitos. Testar sem ferramentas de rastreamento não previstas.
 5. **Operação:** definir quem renova domínio, mantém acessos com MFA, acompanha falhas e dependências, aprova publicação e executa rollback.

@@ -71,7 +71,7 @@ Solicitações devem chegar ao e-mail da profissional, com acesso restrito. Dest
 
 ## Identidade e descoberta
 
-Visual aprovado em conceito: profissional, acolhedor, sofisticado, contemporâneo e minimalista, em tons neutros, bege e off-white, detalhes suaves em dourado ou verde, tipografia refinada, fotos naturais e espaço visual. Dar apelo especial ao público feminino sem usar linguagem ou elementos que comuniquem exclusividade. A paleta exata anterior permanece proposta. A cliente enviará fotos originais; as artes atuais são referências.
+Visual aprovado em conceito: profissional, acolhedor, sofisticado, contemporâneo e minimalista, em tons neutros, bege e off-white, detalhes suaves em dourado ou verde, tipografia refinada, fotos naturais e espaço visual. Dar apelo especial ao público feminino sem usar linguagem ou elementos que comuniquem exclusividade. A [paleta base](knowledge-base/identidade-e-ativos.md) foi definida tecnicamente em 13/11/2026; os códigos exatos ainda não foram aprovados pela cliente. Ela enviará fotos originais; as artes atuais são referências.
 
 SEO pretendido: buscas por psicóloga em São Paulo, Avenida Paulista, Alphaville/Barueri, online, online para brasileiros no exterior e temas informados pela cliente. No MVP, apresentar os seis temas em conteúdo útil e revisado, sem criar seis páginas superficiais apenas por palavra-chave. Páginas temáticas ou artigos entram quando houver conteúdo próprio aprovado. Criar páginas úteis e distintas, SEO técnico e Search Console. Blog inicialmente preparado para o futuro. Presença no Google não implica posição garantida.
 

@@ -9,7 +9,7 @@ Consulte também [registro de decisões](decisoes.md), [mapa inicial de páginas
 1. [`../business-context-lite.md`](../business-context-lite.md) — objetivo, público, serviços, jornada e limites; já criado.
 2. `ficha-profissional.md` — nome/CRP, abordagem, formação, experiência, serviços e modalidades. Anotar fonte, data e aprovação da Soraia para cada afirmação pública.
 3. [`../mapa-inicial-de-paginas.md`](../mapa-inicial-de-paginas.md) — sete rotas e objetivos definidos. `conteudo-do-site.md` ainda precisa reunir textos finais, CTAs, perguntas frequentes e status de aprovação; será a fonte editorial do código.
-4. `identidade-e-ativos.md` — cores, fontes, logotipo, fotos originais, autorização de uso, créditos e texto alternativo.
+4. [`identidade-e-ativos.md`](identidade-e-ativos.md) — paleta base e regras de uso definidas; fontes, logotipo, fotos originais, autorização, créditos e texto alternativo ainda dependem de confirmação.
 5. [`../technical-context-lite.md`](../technical-context-lite.md) — stack e hospedagem da versão 1 definidas tecnicamente; contas, domínio, operação e fornecedores das etapas futuras ainda pendentes.
 6. `seo-e-publicacao.md` — URL final, títulos/descrições, sitemap, Search Console e critérios de publicação. O mapa já traz a intenção inicial de cada página.
 7. [`decisoes.md`](decisoes.md) — registro curto de decisões Onion: contexto, escolha, motivo, impacto, responsável e data; já iniciado.

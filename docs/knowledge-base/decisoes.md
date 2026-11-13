@@ -15,3 +15,11 @@
 **Publicação:** em cada lançamento, Isaac apresenta URL da prévia e resumo das alterações; Soraia aprova o conteúdo e a divulgação; Isaac confere CI e operação e então faz merge na `main`, que dispara o deploy. O aceite pode ser registrado por mensagem contendo a URL/versão revisada. Após o deploy, conferir domínio e links. Alterações puramente técnicas sem efeito no conteúdo público podem seguir fluxo de manutenção acordado entre as partes.
 
 **Pendentes:** domínio e titularidade; conta Cloudflare da cliente e acesso do desenvolvedor; fotos originais/licença; textos e dados finais; aviso de privacidade; aprovação do recorte do MVP. Para formulário e agenda, ver [pendências de descoberta](../pendencias-de-descoberta.md).
+
+## 13/11/2026 — Paleta base do site
+
+**Contexto:** a cliente aprovou o estilo sofisticado, acolhedor e contemporâneo, com neutros, bege, off-white e detalhes suaves em dourado ou verde. As artes recebidas usam oliva profundo e dourado.
+
+**Decisão de design para implementar:** adotar a [paleta e os tokens de uso](identidade-e-ativos.md): marfim `#F7F4EF`, branco quente `#FFFDF9`, bege `#E9DFD1`, oliva `#354437`, grafite `#2F342F`, sálvia `#A5AA99` e dourado `#B49A70`, com variações funcionais para texto, link e hover. O dourado fica em detalhes decorativos por baixo contraste sobre fundos claros.
+
+**Limite:** os códigos exatos são uma proposta técnica para a primeira versão navegável; a Soraia ainda precisa aprovar o resultado visual com fotos reais antes da publicação.
