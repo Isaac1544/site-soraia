@@ -79,7 +79,7 @@ Fontes: [Registro.br](https://registro.br/dominio/), [Cloudflare Workers: preço
 ## Decisões abertas antes de implementar
 
 1. Isaac e Soraia aprovam Astro + TypeScript, GitHub privado e Cloudflare Workers com Static Assets, ou preferem outra combinação? Identificar titular de domínio/Cloudflare, acesso e pagamento.
-2. Confirmar domínio disponível e consentimento da cliente para a ordem: MVP com contato manual → formulário → agenda.
+2. `soraiamedeiros.com.br` apareceu [disponível na consulta de 12/11/2026](https://registro.br/busca-dominio/?fqdn=soraiamedeiros.com.br); confirmar se a cliente possui outro domínio, reconferir disponibilidade e registrar em nome dela se escolhido. Ver [domínio e contas](dominio-e-contas.md). Confirmar a ordem: MVP com contato manual → formulário → agenda.
 3. Aprovar mapa de páginas, textos inclusivos, frase central em seu contexto, fotos originais/licença e endereços publicáveis.
 4. Definir como Soraia revisará prévias e quem terá permissão de merge/publicação.
 5. Antes do formulário: campos obrigatórios, se há perguntas abertas, destino do e-mail, retenção, exclusão e fornecedores aceitos.

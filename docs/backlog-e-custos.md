@@ -78,7 +78,7 @@ Esforço em **horas de trabalho**, apenas para comparar dificuldade e planejar e
 | Estado do projeto | Gasto inicial obrigatório | Mensal mínimo com cotas gratuitas | Cenário pago opcional | Primeiro ano no cenário mínimo |
 |---|---:|---:|---:|---:|
 | Etapa 0, planejamento | R$ 0 | R$ 0 | R$ 0 | R$ 0 |
-| Etapa 1, site simples com domínio `.com.br` | R$ 40 pelo domínio, se disponível | R$ 0 | Hospedagem paga somente se escolhida | **R$ 40** |
+| Etapa 1, site simples com domínio `.com.br` | R$ 40 pelo domínio, se permanecer disponível | R$ 0 | Hospedagem paga somente se escolhida | **R$ 40** |
 | Etapa 2, formulário com baixo volume | R$ 0 adicional | R$ 0 dentro das cotas de API/e-mail | Workers Paid **US$ 5/mês**; Resend Pro **US$ 20/mês** se necessário | **R$ 40** mantendo serviços gratuitos |
 | Etapa 3, agenda com baixo volume | R$ 0 adicional | Pode caber nas cotas gratuitas de API, banco e e-mail | Exemplo de operação paga: Workers Paid **US$ 5/mês**, mantendo e-mail na cota gratuita | **R$ 40** mantendo serviços gratuitos |
 | Etapa 4, blog sem CRM/automação contratados | R$ 0 adicional | R$ 0 para estrutura e publicação própria | Custos de ferramentas e conteúdo escolhidos depois | **R$ 40** mantendo serviços gratuitos |
@@ -102,7 +102,7 @@ Não inserir respostas de pacientes, contatos recebidos ou outros dados pessoais
 
 | Item | Quando | Referência atual | Observação |
 |---|---|---|---|
-| Domínio `.com.br` | Etapa 1 e anual | R$ 40/ano no [Registro.br](https://registro.br/dominio/) | Disponibilidade de `soraiamedeiros.com.br` não verificada; registrar em nome da cliente. |
+| Domínio `.com.br` | Etapa 1 e anual | R$ 40/ano no [Registro.br](https://registro.br/dominio/) | `soraiamedeiros.com.br` [disponível na consulta de 12/11/2026](https://registro.br/busca-dominio/?fqdn=soraiamedeiros.com.br); confirmar novamente antes da compra e registrar em nome da cliente. |
 | Hospedagem estática | Etapa 1 | Pode começar em R$ 0/mês no [Cloudflare Workers Free com Static Assets](https://developers.cloudflare.com/workers/static-assets/billing-and-limitations/) | Requisições a arquivos estáticos são gratuitas; [Workers Builds Free](https://developers.cloudflare.com/workers/ci-cd/builds/limits-and-pricing/) inclui 3.000 minutos de build/mês. Confirmar limites na contratação. |
 | Search Console | Etapa 1 | R$ 0, [serviço gratuito do Google](https://support.google.com/webmasters/answer/9128668) | Indexação/posição não são garantidas. |
 | IA de construção | Etapas 0–4 | [Google AI Studio](https://ai.google.dev/gemini-api/docs/billing): R$ 0 dentro dos limites gratuitos; recurso pago por uso quando ativado | Não há assinatura de IA obrigatória no cenário econômico. |

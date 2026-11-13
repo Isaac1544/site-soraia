@@ -35,7 +35,7 @@ A experiência de aproximadamente 19 anos no mercado corporativo, sobretudo nas 
 - Avenida Paulista, 1159, São Paulo, SP, próximo à estação Trianon-Masp. Sala/conjunto e instruções de chegada não informados.
 - Avenida Trindade, 254, Bethaville I, Barueri, SP. Sala/conjunto e instruções de chegada não informados.
 - WhatsApp: +55 17 98167-1880. E-mail: soraiamedeiros.psic@icloud.com. Instagram: @soraiamedeiros.psic.
-- Domínio pretendido: soraiamedeiros.com.br; titularidade e disponibilidade não verificadas.
+- Domínio pretendido: `soraiamedeiros.com.br`; [disponível no Registro.br](https://registro.br/busca-dominio/?fqdn=soraiamedeiros.com.br) em consulta de 12/11/2026 por R$ 40 no primeiro ano. Ainda não registrado; titularidade e eventual domínio anterior da cliente dependem de confirmação. Ver [domínio e contas](dominio-e-contas.md).
 
 ## Jornada desejada e recorte de lançamento
 

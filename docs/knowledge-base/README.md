@@ -2,7 +2,7 @@
 
 Este diretório deve conter fontes aprovadas e versionadas para manter o site fiel ao negócio. Separar fatos confirmados, decisões de produto e conteúdo editorial. Marcar toda informação pendente como `A CONFIRMAR`; não publicar automaticamente.
 
-Consulte também [pendências de descoberta](../pendencias-de-descoberta.md), [backlog e custos](../backlog-e-custos.md), [Technical Context Lite](../technical-context-lite.md) e [guia de CI/CD](../ci-cd-guia.md) para a sequência de entrega proposta.
+Consulte também [pendências de descoberta](../pendencias-de-descoberta.md), [backlog e custos](../backlog-e-custos.md), [Technical Context Lite](../technical-context-lite.md), [domínio e contas](../dominio-e-contas.md) e [guia de CI/CD](../ci-cd-guia.md) para a sequência de entrega proposta.
 
 ## Necessário para construir a primeira versão
 
