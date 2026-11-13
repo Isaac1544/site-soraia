@@ -8,7 +8,7 @@ A resposta da Soraia confirmou nome/CRP, abordagem declarada, formação e exper
 2. **Fotos:** receber originais e autorização para uso. As duas artes atuais não são fotografias limpas para o layout.
 3. **Conteúdo profissional:** revisão final da apresentação, abordagem integrada, títulos, experiência corporativa, serviços online para residentes no exterior e textos de cada página pela Soraia. Validar a frase “Psicologia para mulheres...” junto de texto que informe o atendimento inclusivo e não exclusivo; aprovar a redação de cada um dos seis temas. Confirmar eventuais exigências éticas/jurisdicionais para atendimento internacional antes de comunicar alcance irrestrito.
 4. **Endereços:** confirmar salas/conjuntos, instruções de chegada, dias de atendimento em cada local e se os endereços podem ser divulgados publicamente.
-5. **Domínio e publicação:** verificar disponibilidade/titularidade de `soraiamedeiros.com.br`, obter acesso ao DNS e aprovar ou ajustar a recomendação Astro + GitHub + Cloudflare Pages. Google AI Studio foi preferência anterior de criação, ainda sem decisão sobre uso final.
+5. **Domínio e publicação:** verificar disponibilidade/titularidade de `soraiamedeiros.com.br`, obter acesso ao DNS e aprovar ou ajustar a recomendação Astro + GitHub + Cloudflare Workers com Static Assets. Google AI Studio foi preferência anterior de criação, ainda sem decisão sobre uso final.
 6. **Operação do site:** definir quem terá acesso ao repositório, hospedagem e domínio, revisará PRs/previews, fará alterações e pagará renovação/manutenção.
 7. **Privacidade do MVP:** definir fornecedor de hospedagem, dados coletados automaticamente por logs/cookies e aviso correspondente; não instalar analytics/pixels por padrão.
 

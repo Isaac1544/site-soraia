@@ -1,6 +1,6 @@
 # Backlog, complexidade e custos — Soraia Medeiros
 
-> Planejamento v0.3, 12/11/2026. Horas indicam complexidade, sem atribuir custo à mão de obra. Orçamento abaixo considera apenas serviços e ferramentas, inclusive construção com IA. Preços de fornecedores consultados em 10–12/11/2026; revisar antes de contratar. Ver [Business Context Lite](business-context-lite.md), [Technical Context Lite](technical-context-lite.md) e [guia de CI/CD](ci-cd-guia.md).
+> Planejamento v0.4, 12/11/2026. Horas indicam complexidade, sem atribuir custo à mão de obra. Orçamento abaixo considera apenas serviços e ferramentas, inclusive construção com IA. Preços de fornecedores consultados em 10–12/11/2026; revisar antes de contratar. Ver [Business Context Lite](business-context-lite.md), [Technical Context Lite](technical-context-lite.md) e [guia de CI/CD](ci-cd-guia.md).
 
 ## Critério de complexidade
 
@@ -73,7 +73,7 @@ Esforço em **horas de trabalho**, apenas para comparar dificuldade e planejar e
 
 ## Custos sem mão de obra: cenário econômico com IA
 
-**Arquitetura de referência para cálculo:** gerar/editar código Astro/TypeScript com apoio de IA e revisão humana; manter especificação e código no GitHub; hospedar o site público estático em Cloudflare Pages; acrescentar Pages Functions/Cloudflare Workers para o formulário e a API da agenda, Resend para e-mails e Cloudflare D1 para os slots. São recomendações ainda não aprovadas, detalhadas no [Technical Context Lite](technical-context-lite.md). O site não precisa chamar uma IA quando o visitante o acessa; assim, o custo de inferência de IA em produção pode ser **R$ 0**.
+**Arquitetura de referência para cálculo:** gerar/editar código Astro/TypeScript com apoio de IA e revisão humana; manter especificação e código no GitHub; hospedar o site público estático em Cloudflare Workers com Static Assets; acrescentar rotas/API no Worker para o formulário e a agenda, Resend para e-mails e Cloudflare D1 para os slots. São recomendações ainda não aprovadas, detalhadas no [Technical Context Lite](technical-context-lite.md). O site não precisa chamar uma IA quando o visitante o acessa; assim, o custo de inferência de IA em produção pode ser **R$ 0**.
 
 | Estado do projeto | Gasto inicial obrigatório | Mensal mínimo com cotas gratuitas | Cenário pago opcional | Primeiro ano no cenário mínimo |
 |---|---:|---:|---:|---:|
@@ -103,7 +103,7 @@ Não inserir respostas de pacientes, contatos recebidos ou outros dados pessoais
 | Item | Quando | Referência atual | Observação |
 |---|---|---|---|
 | Domínio `.com.br` | Etapa 1 e anual | R$ 40/ano no [Registro.br](https://registro.br/dominio/) | Disponibilidade de `soraiamedeiros.com.br` não verificada; registrar em nome da cliente. |
-| Hospedagem estática | Etapa 1 | Pode começar em R$ 0/mês no [Cloudflare Pages Free](https://developers.cloudflare.com/pages/platform/limits/) | 500 builds/mês no plano Free conforme documentação consultada; confirmar limites e condições na contratação. |
+| Hospedagem estática | Etapa 1 | Pode começar em R$ 0/mês no [Cloudflare Workers Free com Static Assets](https://developers.cloudflare.com/workers/static-assets/billing-and-limitations/) | Requisições a arquivos estáticos são gratuitas; [Workers Builds Free](https://developers.cloudflare.com/workers/ci-cd/builds/limits-and-pricing/) inclui 3.000 minutos de build/mês. Confirmar limites na contratação. |
 | Search Console | Etapa 1 | R$ 0, [serviço gratuito do Google](https://support.google.com/webmasters/answer/9128668) | Indexação/posição não são garantidas. |
 | IA de construção | Etapas 0–4 | [Google AI Studio](https://ai.google.dev/gemini-api/docs/billing): R$ 0 dentro dos limites gratuitos; recurso pago por uso quando ativado | Não há assinatura de IA obrigatória no cenário econômico. |
 | Envio transacional de e-mail | Etapa 2+ | [Resend](https://resend.com/pricing): US$ 0 até 3.000 e-mails/mês e 100/dia; Pro US$ 20/mês | Exemplo, não fornecedor escolhido. Confirmar elegibilidade, limites, retenção e tratamento de dados antes de contratar. |
