@@ -1,6 +1,6 @@
 # Technical Context Lite — Soraia Medeiros
 
-> Versão 0.3 — 12/11/2026. A stack e o mapa da versão 1 foram fechados como **decisão técnica do projeto** em [registro de decisões](knowledge-base/decisoes.md) e [mapa inicial de páginas](mapa-inicial-de-paginas.md). A cliente ainda precisa aceitar a ordem de entregas e aprovar o conteúdo/publicação. Nenhum site ou pipeline foi implementado. Valores e limites são referências consultadas nesta data; conferir antes de contratar.
+> Versão 0.4 — revisão em 13/11/2026. A stack e o mapa da versão 1 foram fechados como **decisão técnica do projeto** em [registro de decisões](knowledge-base/decisoes.md) e [mapa inicial de páginas](mapa-inicial-de-paginas.md). A cliente ainda precisa aceitar a ordem de entregas e aprovar o conteúdo/publicação. Nenhum site ou pipeline foi implementado. Valores e limites são referências consultadas em 12–13/11/2026; conferir antes de contratar.
 
 ## Resultado a construir e restrições
 
@@ -61,7 +61,7 @@ Referências: [ANPD: guia para pequenos agentes](https://www.gov.br/anpd/pt-br/c
 
 ### Ética profissional e conteúdo
 
-Exibir nome completo, titulação profissional e CRP. Revisar linguagem sobre formação em andamento, menopausa, burnout, atendimento online e exterior; sem promessa de cura, diagnóstico pelo site ou depoimentos inventados. A cliente deve validar afirmações clínicas e locais. Referência: [CFP: publicidade profissional](https://transparencia.cfp.org.br/crp10/pergunta-frequente/). Atendimento para pessoas no exterior requer confirmação das regras profissionais e da jurisdição do paciente antes de anunciar disponibilidade irrestrita.
+Exibir nome completo ou social confirmado pela profissional, a palavra “psicóloga” e CRP. A resposta da cliente confirmou “Soraia Medeiros” e o número do CRP, mas não o nome completo/social conforme o registro; não usar o nome mais extenso do contexto anterior sem confirmação. Revisar linguagem sobre formação em andamento, menopausa, burnout, atendimento online e exterior; sem promessa de cura, diagnóstico pelo site ou depoimentos inventados. A cliente deve validar afirmações clínicas e locais. Referência: [CRP 10: publicidade profissional](https://transparencia.cfp.org.br/crp10/pergunta-frequente/publicidade-profissional/). Atendimento para pessoas no exterior requer confirmação das regras profissionais e da jurisdição do paciente antes de anunciar disponibilidade irrestrita.
 
 ## Custos de infraestrutura, sem mão de obra
 
@@ -74,7 +74,7 @@ Exibir nome completo, titulação profissional e CRP. Revisar linguagem sobre fo
 
 **MVP anual mínimo:** R$ 40, equivalentes contábeis a R$ 3,33/mês, pagos anualmente. **Cenário pago ilustrativo para formulário:** R$ 40/ano + US$ 300/ano (Workers Paid + Resend Pro). Não converter US$ em R$ sem câmbio/impostos da contratação. Os cenários são alternativos, não parcelas cumulativas. Limites e preços podem mudar; não foi feito teste de elegibilidade da conta nem estimativa de tráfego.
 
-Fontes: [Registro.br](https://registro.br/dominio/), [Cloudflare Workers: preços](https://developers.cloudflare.com/workers/platform/pricing/), [Static Assets: cobrança](https://developers.cloudflare.com/workers/static-assets/billing-and-limitations/), [Workers Builds: limites](https://developers.cloudflare.com/workers/ci-cd/builds/limits-and-pricing/), [Cloudflare D1](https://developers.cloudflare.com/d1/platform/pricing/), [Cloudflare Turnstile](https://developers.cloudflare.com/turnstile/plans/), [Resend](https://resend.com/pricing), [GitHub Actions](https://docs.github.com/en/billing/concepts/product-billing/github-actions). No Free, arquivos estáticos não geram cobrança por requisição; Workers Builds inclui 3.000 minutos de build/mês, e a execução dinâmica tem cota própria. GitHub Free inclui 2.000 minutos mensais de Actions para repositórios privados, conforme a documentação consultada; monitorar consumo e definir limite de gastos.
+Fontes: [Registro.br](https://registro.br/dominio/), [Cloudflare Workers: preços](https://developers.cloudflare.com/workers/platform/pricing/), [Static Assets: cobrança](https://developers.cloudflare.com/workers/static-assets/billing-and-limitations/), [Workers Builds: limites](https://developers.cloudflare.com/workers/ci-cd/builds/limits-and-pricing/), [Cloudflare D1](https://developers.cloudflare.com/d1/platform/pricing/), [Cloudflare Turnstile](https://developers.cloudflare.com/turnstile/plans/), [Resend](https://resend.com/pricing), [GitHub Actions](https://docs.github.com/en/billing/concepts/product-billing/github-actions). No Free, requisições a arquivos estáticos não geram cobrança; Workers Builds inclui 3.000 minutos de build/mês, e a execução dinâmica tem cota própria. Em 13/11/2026, o GitHub Free apresenta **US$ 12/mês de computação incluída** para Actions, em vez de uma franquia expressa como quantidade fixa de minutos; monitorar consumo, armazenamento e orçamento da conta do titular.
 
 ## Decisões abertas antes de implementar e publicar
 

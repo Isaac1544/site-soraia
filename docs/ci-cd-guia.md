@@ -1,13 +1,13 @@
 # CI/CD do projeto — guia de estudo e execução
 
-> Proposta v0.2 — 12/11/2026. Documenta a esteira **antes de criar o site**. A automação concreta será configurada após a aprovação do [Technical Context Lite](technical-context-lite.md) e a criação do código.
+> Guia v0.3 — revisão em 13/11/2026. Documenta a esteira **antes de criar o site**. A stack já foi escolhida tecnicamente no [Technical Context Lite](technical-context-lite.md); a automação concreta será configurada junto com o código.
 
 ## Conceitos em linguagem simples
 
 - **Git:** registra versões do código e permite voltar a uma versão anterior.
 - **Branch:** linha de trabalho isolada para uma alteração pequena.
 - **Pull request (PR):** proposta de juntar a branch à `main`, com revisão e resultados das verificações.
-- **CI, integração contínua:** a cada PR, instalar dependências, verificar código e construir o site automaticamente. Falha bloqueia a publicação até correção.
+- **CI, integração contínua:** a cada PR, instalar dependências, verificar código e construir o site automaticamente. O processo de revisão exige corrigir falhas antes do merge; um bloqueio automático no GitHub depende das regras configuradas no repositório.
 - **CD, entrega/implantação contínua:** após integrar código aprovado à `main`, criar e publicar a nova versão. Neste projeto, Workers Builds conectado ao GitHub pode fazer o deploy; o GitHub Actions cuida da CI.
 - **Ambientes:** local (trabalho), preview (revisão por link de PR) e produção (domínio da cliente). Preview não deve conter contatos reais recebidos nem segredos.
 
@@ -15,7 +15,7 @@
 
 ```mermaid
 flowchart LR
-  A[Especificação e conteúdo aprovados] --> B[Branch pequena]
+  A[Especificação da tarefa] --> B[Branch pequena]
   B --> C[PR no GitHub]
   C --> D[CI: instalar, checar, construir]
   C --> E[Preview Cloudflare]
@@ -89,4 +89,4 @@ Os vídeos mostram interfaces que podem mudar; para comandos e limites usar as d
 - Domínio em nome da cliente, DNS e HTTPS ativos; página 404 e URLs canônicas verificadas.
 - Links externos e e-mail funcionais; sitemap enviado ao Search Console; plano de rollback conhecido.
 
-**Próximo artefato de código:** após aprovar a stack, criar o projeto Astro e o workflow de CI correspondente. Este documento não afirma que a esteira já está funcionando.
+**Próximo artefato de código:** criar o projeto Astro e o workflow de CI correspondente. Este documento não afirma que a esteira já está funcionando.

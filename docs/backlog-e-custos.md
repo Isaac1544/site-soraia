@@ -1,6 +1,6 @@
 # Backlog, complexidade e custos — Soraia Medeiros
 
-> Planejamento v0.4, 12/11/2026. Horas indicam complexidade, sem atribuir custo à mão de obra. Orçamento abaixo considera apenas serviços e ferramentas, inclusive construção com IA. Preços de fornecedores consultados em 10–12/11/2026; revisar antes de contratar. Ver [Business Context Lite](business-context-lite.md), [Technical Context Lite](technical-context-lite.md) e [guia de CI/CD](ci-cd-guia.md).
+> Planejamento v0.5, revisado em 13/11/2026. Horas indicam complexidade, sem atribuir custo à mão de obra. Orçamento abaixo considera apenas serviços e ferramentas, inclusive construção com IA. Preços de fornecedores consultados em 10–13/11/2026; revisar antes de contratar. Ver [Business Context Lite](business-context-lite.md), [Technical Context Lite](technical-context-lite.md), [mapa de páginas](mapa-inicial-de-paginas.md) e [guia de CI/CD](ci-cd-guia.md).
 
 ## Critério de complexidade
 
@@ -17,18 +17,20 @@ Esforço em **horas de trabalho**, apenas para comparar dificuldade e planejar e
 | ID | Tarefa pequena / critério de pronto | Grau | Horas | Recursos |
 |---|---|---:|---:|---|
 | B00 | Consolidar fatos da cliente, status e conteúdo publicável, incluindo foco feminino inclusivo e seis temas de atuação | Baixa | 2–3 | Dev + Soraia |
-| B01 | Definir mapa das páginas, mensagens e CTAs da primeira versão; aprovar frase central em contexto inclusivo | Baixa | 3–5 | Dev + Soraia |
-| B02 | Aprovar Technical Context Lite, hospedagem, acesso ao domínio, contas e responsável por custos | Média | 2–4 | Dev + titular das contas |
+| B01 | Usar mapa de páginas já definido; fechar mensagens, CTAs e frase central em contexto inclusivo com a cliente | Baixa | 3–5 | Dev + Soraia |
+| B02 | Aplicar Technical Context Lite já definido; confirmar acesso ao domínio, conta Cloudflare e responsável por custos | Média | 2–4 | Dev + titular das contas |
 
 **Total:** 7–12 h. Custo externo obrigatório: R$ 0 nesta etapa.
+
+**Estado:** B00 tem contexto consolidado; B01 tem o mapa técnico das sete páginas definido, mas mensagens e texto final aguardam revisão da Soraia; B02 tem stack/hospedagem escolhidas tecnicamente, mas domínio, contas, acessos e responsabilidade por pagamentos seguem pendentes. As horas acima são estimativas originais da etapa, não horas restantes.
 
 ## Etapa 1 — site institucional simples, publicável (P0 / MVP)
 
 | ID | Tarefa pequena / critério de pronto | Grau | Horas | Recursos |
 |---|---|---:|---:|---|
-| B10 | Estrutura Astro/TypeScript proposta, configuração central de contatos, GitHub Actions para CI e preview/deploy por Git | Média | 4–6 | Dev + contas GitHub/Cloudflare |
+| B10 | Implementar estrutura Astro/TypeScript escolhida, configuração central de contatos, GitHub Actions para CI e preview/deploy por Git | Média | 4–6 | Dev + contas GitHub/Cloudflare |
 | B11 | Layout responsivo para celular e computador, com identidade visual aprovada | Média | 8–14 | Dev + Soraia; fotos originais |
-| B12 | Redigir e montar páginas essenciais: início, sobre, atuação/modalidades, locais e contato; apresentar seis temas com conteúdo próprio, sem seis páginas vazias | Média | 8–12 | Dev + revisão da Soraia |
+| B12 | Redigir e montar as sete rotas do mapa: início, sobre, psicoterapia, online, presencial, contato e privacidade; apresentar seis temas com conteúdo próprio, sem seis páginas vazias | Média | 8–12 | Dev + revisão da Soraia |
 | B13 | Integrar links WhatsApp, Instagram e e-mail; navegação e CTAs acessíveis | Baixa | 3–5 | Dev |
 | B14 | SEO técnico: títulos, descrições, canonical, sitemap, robots, dados factuais e links internos | Média | 5–8 | Dev |
 | B15 | Aviso de privacidade compatível com o funcionamento real, revisão do preview, publicação, DNS, verificação final e Search Console | Média | 5–8 | Dev + Soraia + revisão de privacidade |
@@ -73,7 +75,7 @@ Esforço em **horas de trabalho**, apenas para comparar dificuldade e planejar e
 
 ## Custos sem mão de obra: cenário econômico com IA
 
-**Arquitetura de referência para cálculo:** gerar/editar código Astro/TypeScript com apoio de IA e revisão humana; manter especificação e código no GitHub; hospedar o site público estático em Cloudflare Workers com Static Assets; acrescentar rotas/API no Worker para o formulário e a agenda, Resend para e-mails e Cloudflare D1 para os slots. São recomendações ainda não aprovadas, detalhadas no [Technical Context Lite](technical-context-lite.md). O site não precisa chamar uma IA quando o visitante o acessa; assim, o custo de inferência de IA em produção pode ser **R$ 0**.
+**Arquitetura de referência para cálculo:** a versão 1 usa a stack tecnicamente escolhida: Astro/TypeScript, GitHub e Cloudflare Workers com Static Assets. Para as etapas futuras, Worker/API, Resend e D1 são **exemplos de orçamento**, ainda sem decisão de fornecedor ou desenho final. O site não precisa chamar uma IA quando o visitante o acessa; assim, o custo de inferência de IA em produção pode ser **R$ 0**. O recorte de publicação da versão 1 aguarda aceite da cliente.
 
 | Estado do projeto | Gasto inicial obrigatório | Mensal mínimo com cotas gratuitas | Cenário pago opcional | Primeiro ano no cenário mínimo |
 |---|---:|---:|---:|---:|
@@ -117,7 +119,7 @@ Os custos em dólar foram mantidos em dólar para não presumir câmbio, imposto
 
 1. Apresentar à Soraia o recorte de lançamento: site simples primeiro, formulário e agenda nas etapas seguintes. Registrar aceite da ordem de entrega.
 2. Obter fotos originais e aprovar textos; confirmar detalhes de sala e possibilidade de divulgar cada endereço.
-3. Confirmar domínio, titular e plataforma de hospedagem. Google AI Studio foi preferência de construção; publicação e manutenção precisam de escolha própria.
+3. Confirmar domínio e titular, criar conta Cloudflare da cliente, conceder acesso técnico e conectar o repositório GitHub já existente. Google AI Studio pode apoiar a construção, sem substituir a stack e a hospedagem escolhidas.
 4. Para etapa 2, definir política operacional de dados e se perguntas sobre motivo/expectativas são necessárias no canal público.
 5. Para etapa 3, definir último horário de início, regras por local, bloqueios, expiração de pedido pendente e canal de notificação.
 

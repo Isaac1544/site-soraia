@@ -8,17 +8,18 @@ Consulte também [registro de decisões](decisoes.md), [mapa inicial de páginas
 
 1. [`../business-context-lite.md`](../business-context-lite.md) — objetivo, público, serviços, jornada e limites; já criado.
 2. `ficha-profissional.md` — nome/CRP, abordagem, formação, experiência, serviços e modalidades. Anotar fonte, data e aprovação da Soraia para cada afirmação pública.
-3. `conteudo-do-site.md` — mapa de páginas, texto final de cada página, CTAs, perguntas frequentes e status de aprovação. É a fonte do conteúdo que o código deve exibir.
+3. [`../mapa-inicial-de-paginas.md`](../mapa-inicial-de-paginas.md) — sete rotas e objetivos definidos. `conteudo-do-site.md` ainda precisa reunir textos finais, CTAs, perguntas frequentes e status de aprovação; será a fonte editorial do código.
 4. `identidade-e-ativos.md` — cores, fontes, logotipo, fotos originais, autorização de uso, créditos e texto alternativo.
-5. [`../technical-context-lite.md`](../technical-context-lite.md) — recomendações de tecnologia, hospedagem, domínio, ambientes, segurança, SEO técnico e operação; proposta criada, decisões finais pendentes.
-6. `seo-e-publicacao.md` — URL final, intenção de cada página, títulos/descrições, páginas locais, sitemap, Search Console e critérios de publicação.
+5. [`../technical-context-lite.md`](../technical-context-lite.md) — stack e hospedagem da versão 1 definidas tecnicamente; contas, domínio, operação e fornecedores das etapas futuras ainda pendentes.
+6. `seo-e-publicacao.md` — URL final, títulos/descrições, sitemap, Search Console e critérios de publicação. O mapa já traz a intenção inicial de cada página.
 7. [`decisoes.md`](decisoes.md) — registro curto de decisões Onion: contexto, escolha, motivo, impacto, responsável e data; já iniciado.
 8. [`../backlog-e-custos.md`](../backlog-e-custos.md) — etapas, tarefas e dependências; já criado.
 
 ## Preparar quando a respectiva etapa começar
 
 - [`08-especificacao-do-formulario.md`](08-especificacao-do-formulario.md) — rascunho já criado; fechar campos, regras, destino, privacidade e critérios de aceite antes de implementar o formulário.
-- `privacidade-e-retencao.md` — fluxo real dos dados, controlador, fornecedores, acesso, retenção, exclusão e aviso revisado; necessário antes de receber solicitações pelo site.
+- `aviso-de-privacidade-mvp.md` — fluxo técnico real do site estático, hospedagem, links externos, canal de direitos e aviso revisado; necessário antes de publicar o MVP.
+- `privacidade-e-retencao.md` — fluxo de dados do formulário, controlador, fornecedores, acesso, retenção e exclusão; necessário antes de receber solicitações pelo site.
 - `agenda-e-fusos.md` — regras de slots, locais, bloqueios, pedidos pendentes, aprovação, expiração e conversão por zona IANA; necessário antes da etapa de agenda.
 - `conteudo-editorial/` — brief, autoria, fontes e revisão de cada artigo; necessário quando o blog tiver artigos.
 

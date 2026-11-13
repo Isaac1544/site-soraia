@@ -1,10 +1,12 @@
 # Business Context Lite — Soraia Medeiros
 
-> Versão 0.4 — 12/11/2026. Fontes: respostas escritas da cliente recebidas pelo desenvolvedor, inclusive atualização de posicionamento em 12/11, e decisões de planejamento posteriores. Fatos profissionais e operacionais são declarações da cliente; revisão final de texto e publicação permanece pendente. **Implementação do site ainda não iniciada.**
+> Versão 0.5 — revisão em 13/11/2026. Fontes: respostas escritas da cliente recebidas pelo desenvolvedor, inclusive atualização de posicionamento em 12/11, e decisões de planejamento posteriores. Fatos profissionais e operacionais são declarações da cliente; revisão final de texto e publicação permanece pendente. **Implementação do site ainda não iniciada.**
 
 ## Negócio e público
 
 Soraia Medeiros — Psicóloga Clínica, CRP 06/216738. Atendimento psicológico individual em português para adultos, com sessões de 50 minutos. Atende online e presencialmente em São Paulo (Avenida Paulista) e em Barueri (Alphaville). O site deve apresentar sua atuação de modo profissional, acolhedor e sóbrio; facilitar contato e solicitação de atendimento; ampliar o alcance a brasileiros residentes no exterior.
+
+“Soraia Medeiros” e o CRP constam na resposta da cliente. O **nome completo ou nome social a usar na identificação pública**, conforme seu registro profissional, ainda precisa ser confirmado; o arquivo de contexto anterior citava um nome mais extenso introduzido pelo assistente, sem confirmação da cliente. Não publicar esse nome inferido.
 
 O atendimento e a linguagem devem permanecer **amplos e inclusivos**: o site não deve afirmar nem sugerir que Soraia atende exclusivamente mulheres. Mulheres adultas são o público de maior interesse, com atenção a desafios emocionais, profissionais, familiares e pessoais, autoconhecimento, equilíbrio e qualidade de vida. A identidade e os exemplos podem dialogar especialmente com a trajetória feminina, preservando uma porta de entrada clara para outras pessoas adultas.
 
@@ -77,16 +79,16 @@ SEO pretendido: buscas por psicóloga em São Paulo, Avenida Paulista, Alphavill
 
 **SEO** (otimização para mecanismos de busca) reúne melhorias que ajudam buscadores a compreender as páginas e pessoas a encontrá-las em pesquisas relevantes. Para este projeto, envolve conteúdo útil e factual, páginas claras sobre serviços e locais, navegação simples, boa leitura no celular e estrutura técnica rastreável. SEO orgânico não é anúncio pago e não assegura uma posição específica. Referência: [Guia de SEO do Google](https://developers.google.com/search/docs/fundamentals/seo-starter-guide).
 
-1. **Primeiro lançamento:** publicar site simples no domínio próprio, com início, sobre, atendimento online, atendimento presencial e contato; incluir WhatsApp, Instagram e e-mail funcionais. Aprovar fotografias, textos e identificação profissional antes de publicar.
-2. **SEO desde a construção:** títulos e descrições específicos, endereços e modalidades verdadeiros, páginas locais úteis e distintas, links internos, navegação acessível, sitemap e configuração do Search Console. [Enviar o sitemap](https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap) ajuda na descoberta das URLs, sem garantir indexação.
+1. **Primeiro lançamento:** publicar as sete páginas do [mapa inicial](mapa-inicial-de-paginas.md): início, sobre, psicoterapia, atendimento online, atendimento presencial, contato e privacidade; incluir WhatsApp, Instagram e e-mail funcionais. Aprovar fotografias, textos e identificação profissional antes de publicar.
+2. **SEO desde a construção:** títulos e descrições específicos, endereços e modalidades verdadeiros, seções locais úteis e distintas na página presencial, links internos, navegação acessível, sitemap e configuração do Search Console. [Enviar o sitemap](https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap) ajuda na descoberta das URLs, sem garantir indexação.
 3. **Após o lançamento:** incluir formulário de pré-atendimento quando fluxo de dados, privacidade, segurança e recebimento estiverem definidos.
 4. **Depois do formulário:** criar agenda com horários reais, conversão de fuso e aprovação manual. O painel administrativo exige autenticação e prevenção de conflitos de horário.
 5. **Crescimento:** publicar artigos revisados pela Soraia e acompanhar buscas e páginas no Search Console para orientar melhorias de conteúdo.
 
-**Capacidade de execução:** o desenvolvedor e o assistente podem construir o site com apoio de IA, usando este contexto, o [backlog](backlog-e-custos.md) e o [Technical Context Lite](technical-context-lite.md) como especificação, revisando cada entrega antes de publicar. A escolha final da hospedagem e a aprovação das etapas permanecem abertas. A implementação não deve começar nesta fase de planejamento.
+**Capacidade de execução:** o desenvolvedor e o assistente podem construir o site com apoio de IA, usando este contexto, o [backlog](backlog-e-custos.md) e o [Technical Context Lite](technical-context-lite.md) como especificação, revisando cada entrega antes de publicar. A stack e a hospedagem foram escolhidas tecnicamente para o MVP; a conta Cloudflare, o domínio, o aceite da ordem de entregas e o conteúdo público ainda dependem de ações e revisão. O esqueleto do código pode começar com conteúdo provisório claramente marcado, sem publicá-lo como site final.
 
 ## Sucesso e decisões abertas
 
 O visitante deve encontrar serviços, local e contato no celular e no computador. Layout, menus, imagens e textos devem se ajustar à largura da tela, sem corte ou rolagem horizontal; botões e links devem funcionar por toque, mouse e teclado. Páginas devem ser rastreáveis. Nas etapas posteriores, solicitações devem chegar com segurança e a agenda não deve oferecer um slot já reservado ou pendente.
 
-Pendentes: domínio e hospedagem; forma final de construção (Google AI Studio foi preferência anterior); fotos e autorização; revisão profissional e atendimento internacional; salas/conjuntos; regras completas da agenda; fornecedor do formulário; armazenamento, retenção e política de privacidade; orçamento e aceite das etapas. Consulte [`backlog-e-custos.md`](backlog-e-custos.md).
+Pendentes: registro e titularidade do domínio, conta Cloudflare e acesso; aceite da ordem de entregas; fotos e autorização; revisão profissional e atendimento internacional; salas/conjuntos; regras completas da agenda; fornecedor do formulário; armazenamento, retenção e aviso de privacidade; confirmação de custos na contratação. Google AI Studio permanece opção de apoio à construção, sem papel obrigatório no site publicado. Consulte [`backlog-e-custos.md`](backlog-e-custos.md).

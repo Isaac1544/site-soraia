@@ -51,10 +51,9 @@ Confirmar obrigatoriedade dos campos. A cliente quer e-mail e WhatsApp juntos; o
 - Upload de arquivos e relato clínico detalhado.
 - Analytics de conversão individual ou pixels publicitários.
 
-## Decisões que bloqueiam implementação/publicação
+## Decisões que bloqueiam a etapa do formulário
 
-- A cliente quer slots reais e aprovação manual na etapa 3; definir regras de disponibilidade e bloqueio.
 - Definir obrigatoriedade e necessidade dos campos, sobretudo motivo/expectativas.
 - Escolher provedor do formulário/backend e destino do envio.
 - Definir retenção, exclusão, operadores e revisão do aviso LGPD.
-- Confirmar fuso da psicóloga, agenda e horas realmente oferecidas em cada modalidade/local.
+- O fuso da psicóloga já está confirmado como `America/Sao_Paulo`. As regras de slots, bloqueios e horários por modalidade/local pertencem à etapa 3 e não bloqueiam o formulário simples da etapa 2.

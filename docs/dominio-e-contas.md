@@ -1,10 +1,10 @@
 # Domínio e titularidade das contas — Soraia Medeiros
 
-> Consulta e recomendação em 12/11/2026. Nenhum domínio foi registrado, nenhuma conta foi criada e nenhum pagamento foi feito. Disponibilidade pode mudar a qualquer momento.
+> Consulta realizada em 12/11/2026; documento revisado em 13/11/2026. O projeto ainda não contém confirmação de registro do domínio, criação de conta Cloudflare ou pagamento. A disponibilidade pode mudar a qualquer momento.
 
 ## Resultado da verificação
 
-- O [Registro.br mostrou `soraiamedeiros.com.br` disponível para registro](https://registro.br/busca-dominio/?fqdn=soraiamedeiros.com.br), com opção de **R$ 40 por um ano**, no momento da consulta pelo navegador.
+- O [Registro.br mostrou `soraiamedeiros.com.br` disponível para registro](https://registro.br/busca-dominio/?fqdn=soraiamedeiros.com.br), com opção de **R$ 40 por um ano**, na consulta de 12/11/2026. Não há nova confirmação de disponibilidade neste documento.
 - A pesquisa pública não encontrou um site oficial claramente associado à Soraia. Isso não prova que ela não tenha outro domínio ou site não indexado. Perguntar se já possui algum domínio, acesso ao registrador ou contrato anterior antes de comprar outro.
 - **Disponível** significa que o endereço específico ainda podia ser registrado na consulta; não significa que esteja reservado. Confirmar novamente imediatamente antes de concluir o pedido.
 
