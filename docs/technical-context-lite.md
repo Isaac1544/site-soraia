@@ -1,6 +1,6 @@
 # Technical Context Lite — Soraia Medeiros
 
-> Proposta v0.2 — 12/11/2026. **Decisões recomendadas, ainda não aprovadas nem implementadas.** Este documento traduz o [Business Context Lite](business-context-lite.md) e o [backlog](backlog-e-custos.md) em escolhas técnicas progressivas. Valores e limites são referências consultadas nesta data; conferir antes de contratar. A recomendação de hospedagem foi ajustada de Pages para Workers após conferir a orientação atual do Astro/Cloudflare para projetos novos.
+> Versão 0.3 — 12/11/2026. A stack e o mapa da versão 1 foram fechados como **decisão técnica do projeto** em [registro de decisões](knowledge-base/decisoes.md) e [mapa inicial de páginas](mapa-inicial-de-paginas.md). A cliente ainda precisa aceitar a ordem de entregas e aprovar o conteúdo/publicação. Nenhum site ou pipeline foi implementado. Valores e limites são referências consultadas nesta data; conferir antes de contratar.
 
 ## Resultado a construir e restrições
 
@@ -14,7 +14,7 @@
 
 | Campo | Recomendação agora | Vantagens | Limites / alternativa |
 |---|---|---|---|
-| Frontend | **Astro + TypeScript + CSS**, HTML gerado no build; JavaScript somente onde necessário | Páginas de conteúdo rápidas, componentes reutilizáveis, HTML rastreável, imagens otimizadas, base simples para IA gerar e revisar | Menos conveniente que Next.js se o produto virar aplicação interativa extensa. Next.js é alternativa quando houver forte necessidade de interface dinâmica/SSR; traz mais complexidade operacional no MVP. |
+| Frontend | **Astro + TypeScript + CSS nativo**, HTML gerado no build; JavaScript somente onde necessário; `npm` com lockfile | Páginas de conteúdo rápidas, componentes reutilizáveis, HTML rastreável, imagens otimizadas, base simples para IA gerar e revisar | Menos conveniente que Next.js se o produto virar aplicação interativa extensa. Next.js é alternativa quando houver forte necessidade de interface dinâmica/SSR; traz mais complexidade operacional no MVP. |
 | Repositório | **GitHub privado já existente**, com `main`, branches `codex/` ou `feature/` e pull requests | Evita migração, reúne histórico, revisão e GitHub Actions | GitLab também integra com Cloudflare Workers, mas a migração agora acrescenta trabalho sem benefício identificado. Código privado não torna o site publicado privado. |
 | Hospedagem do MVP | **Cloudflare Workers Free com Static Assets e Workers Builds**, conectado ao GitHub, domínio `.com.br` da cliente | Servir páginas estáticas agora e acrescentar rotas/API depois na mesma plataforma; build/deploy por Git e prévia por branch | Configuração inicial via Wrangler é um pouco mais técnica que Pages; função dinâmica está sujeita a limites. Pages continua alternativa válida para site estritamente estático. Vercel Hobby é restrito a uso pessoal/não comercial; projeto de cliente requer plano adequado. |
 | Tipo de site | **Estático no MVP, sem backend e sem banco de dados** | Menor custo, superfície de ataque e manutenção | Links de contato não organizam triagem. Formulário real exige serviço de processamento e proteção; agenda exige estado persistente. |
@@ -76,11 +76,11 @@ Exibir nome completo, titulação profissional e CRP. Revisar linguagem sobre fo
 
 Fontes: [Registro.br](https://registro.br/dominio/), [Cloudflare Workers: preços](https://developers.cloudflare.com/workers/platform/pricing/), [Static Assets: cobrança](https://developers.cloudflare.com/workers/static-assets/billing-and-limitations/), [Workers Builds: limites](https://developers.cloudflare.com/workers/ci-cd/builds/limits-and-pricing/), [Cloudflare D1](https://developers.cloudflare.com/d1/platform/pricing/), [Cloudflare Turnstile](https://developers.cloudflare.com/turnstile/plans/), [Resend](https://resend.com/pricing), [GitHub Actions](https://docs.github.com/en/billing/concepts/product-billing/github-actions). No Free, arquivos estáticos não geram cobrança por requisição; Workers Builds inclui 3.000 minutos de build/mês, e a execução dinâmica tem cota própria. GitHub Free inclui 2.000 minutos mensais de Actions para repositórios privados, conforme a documentação consultada; monitorar consumo e definir limite de gastos.
 
-## Decisões abertas antes de implementar
+## Decisões abertas antes de implementar e publicar
 
-1. Isaac e Soraia aprovam Astro + TypeScript, GitHub privado e Cloudflare Workers com Static Assets, ou preferem outra combinação? Identificar titular de domínio/Cloudflare, acesso e pagamento.
-2. `soraiamedeiros.com.br` apareceu [disponível na consulta de 12/11/2026](https://registro.br/busca-dominio/?fqdn=soraiamedeiros.com.br); confirmar se a cliente possui outro domínio, reconferir disponibilidade e registrar em nome dela se escolhido. Ver [domínio e contas](dominio-e-contas.md). Confirmar a ordem: MVP com contato manual → formulário → agenda.
-3. Aprovar mapa de páginas, textos inclusivos, frase central em seu contexto, fotos originais/licença e endereços publicáveis.
-4. Definir como Soraia revisará prévias e quem terá permissão de merge/publicação.
+1. A stack e o [mapa de sete páginas](mapa-inicial-de-paginas.md) estão definidos para orientar o código. Confirmar com a cliente a ordem de entrega: MVP com contato manual → formulário → agenda, pois o pedido original incluía pré-atendimento e horários.
+2. `soraiamedeiros.com.br` apareceu [disponível na consulta de 12/11/2026](https://registro.br/busca-dominio/?fqdn=soraiamedeiros.com.br); confirmar se a cliente possui outro domínio, reconferir disponibilidade e registrar em nome dela se escolhido. Ver [domínio e contas](dominio-e-contas.md). Identificar titular da conta Cloudflare, acesso e pagamento.
+3. Aprovar textos inclusivos, frase central em seu contexto, fotos originais/licença e endereços publicáveis antes do lançamento.
+4. Aplicar o [fluxo de autorização de publicação](knowledge-base/decisoes.md): Soraia revisa URL da prévia e aprova conteúdo/divulgação; Isaac valida CI, faz merge e confere deploy. Definir quem terá acesso de merge e publicação nas contas.
 5. Antes do formulário: campos obrigatórios, se há perguntas abertas, destino do e-mail, retenção, exclusão e fornecedores aceitos.
 6. Antes da agenda: regras de slots, autenticação, calendário de origem, tratamento de pedidos pendentes e custos operacionais.

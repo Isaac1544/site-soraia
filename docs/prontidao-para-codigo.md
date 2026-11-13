@@ -1,15 +1,15 @@
 # Prontidão para iniciar o código — Soraia Medeiros
 
-> Estado em 12/11/2026. Este é um roteiro de decisões, não um registro de aprovação da cliente. Consultar [Technical Context Lite](technical-context-lite.md), [Business Context Lite](business-context-lite.md) e [backlog](backlog-e-custos.md).
+> Estado em 12/11/2026. A stack e o [mapa inicial de páginas](mapa-inicial-de-paginas.md) foram fechados como decisões técnicas do projeto; o recorte de entrega e o conteúdo público aguardam aceite da cliente. Consultar [Technical Context Lite](technical-context-lite.md), [Business Context Lite](business-context-lite.md) e [backlog](backlog-e-custos.md).
 
 ## Stack proposta para a primeira entrega
 
 | Camada | Escolha recomendada | Estado |
 |---|---|---|
-| Site | Astro + TypeScript + CSS, páginas geradas no build e layout responsivo | Proposta técnica; falta aceite |
+| Site | Astro + TypeScript + CSS nativo, páginas geradas no build e layout responsivo | Decisão técnica para a versão 1 |
 | Código | GitHub privado já existente; tarefas pequenas em branches e PRs | Repositório existe; fluxo de aprovação pendente |
-| CI | GitHub Actions: `npm ci`, checagem de tipos e build a cada PR | A implementar junto com o projeto |
-| CD | Cloudflare Workers com Static Assets e Workers Builds; preview por branch e produção após merge em `main` | Conta/integração ainda não configuradas |
+| CI | GitHub Actions: `npm ci`, checagem de tipos e build a cada PR | Decisão técnica; a implementar junto com o projeto |
+| CD | Cloudflare Workers com Static Assets e Workers Builds; preview por branch e produção após merge em `main` | Decisão técnica; conta/integração ainda não configuradas |
 | Dados | MVP estático, sem banco, login, formulário ativo ou agenda | Depende do aceite explícito da ordem de entregas |
 | Conteúdo e mídia | Markdown/configuração no repositório; fotos autorizadas e otimizadas no build | Conteúdo e originais finais pendentes |
 | Métricas | Sem pixels ou analytics de terceiros no MVP; revisar logs e aviso de privacidade | Revisão antes da publicação |
@@ -19,9 +19,9 @@ O horário de referência para a agenda futura já foi confirmado: `America/Sao_
 ## Decisões para começar a implementação
 
 1. **Confirmar o recorte da versão 1:** site institucional com páginas, WhatsApp, Instagram e e-mail; formulário e agenda em entregas posteriores. A cliente solicitou essas funções, portanto o adiamento precisa estar claro e aceito.
-2. **Aceitar ou ajustar a stack acima:** Astro/TypeScript/CSS, GitHub e Cloudflare Workers. Registrar a decisão e a pessoa responsável. Não há motivo técnico identificado para trocar de stack no MVP.
-3. **Fechar um mapa mínimo de páginas e critérios de aceite:** início, sobre, atendimento/temas, locais e privacidade/contato podem orientar o primeiro esqueleto. O texto definitivo pode entrar por PR posterior, desde que os placeholders não sejam publicados.
-4. **Definir quem revisa a preview e autoriza o merge inicial:** Isaac cuida da implementação; Soraia valida dados profissionais, linguagem, imagens e links públicos. A regra de aprovação deve ser registrada mesmo que o plano do GitHub não a imponha tecnicamente.
+2. **Aplicar a stack já escolhida:** Astro/TypeScript/CSS, GitHub e Cloudflare Workers, conforme [registro de decisões](knowledge-base/decisoes.md). Versões serão fixadas no lockfile ao criar o projeto.
+3. **Usar o mapa de páginas definido:** início, sobre, psicoterapia, online, presencial, contato e privacidade. O texto definitivo pode entrar por PR posterior, desde que os placeholders não sejam publicados.
+4. **Aplicar o fluxo de revisão:** Isaac implementa e valida tecnicamente; Soraia aprova o conteúdo da prévia e a divulgação antes do primeiro merge de publicação. Definir as permissões nas contas.
 
 Com essas quatro decisões, já é possível criar o projeto Astro, componentes, estilos, rotas, `package-lock.json`, `.gitignore` revisado e workflow de CI. Fotos e domínio não são pré-requisitos para esse primeiro código. O resultado deve rodar localmente e gerar uma preview com conteúdo marcado como provisório.
 

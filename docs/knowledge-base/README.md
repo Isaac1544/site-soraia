@@ -2,7 +2,7 @@
 
 Este diretório deve conter fontes aprovadas e versionadas para manter o site fiel ao negócio. Separar fatos confirmados, decisões de produto e conteúdo editorial. Marcar toda informação pendente como `A CONFIRMAR`; não publicar automaticamente.
 
-Consulte também [prontidão para iniciar o código](../prontidao-para-codigo.md), [pendências de descoberta](../pendencias-de-descoberta.md), [backlog e custos](../backlog-e-custos.md), [Technical Context Lite](../technical-context-lite.md), [domínio e contas](../dominio-e-contas.md) e [guia de CI/CD](../ci-cd-guia.md) para a sequência de entrega proposta.
+Consulte também [registro de decisões](decisoes.md), [mapa inicial de páginas](../mapa-inicial-de-paginas.md), [prontidão para iniciar o código](../prontidao-para-codigo.md), [pendências de descoberta](../pendencias-de-descoberta.md), [backlog e custos](../backlog-e-custos.md), [Technical Context Lite](../technical-context-lite.md), [domínio e contas](../dominio-e-contas.md) e [guia de CI/CD](../ci-cd-guia.md) para a sequência de entrega proposta.
 
 ## Necessário para construir a primeira versão
 
@@ -12,7 +12,7 @@ Consulte também [prontidão para iniciar o código](../prontidao-para-codigo.md
 4. `identidade-e-ativos.md` — cores, fontes, logotipo, fotos originais, autorização de uso, créditos e texto alternativo.
 5. [`../technical-context-lite.md`](../technical-context-lite.md) — recomendações de tecnologia, hospedagem, domínio, ambientes, segurança, SEO técnico e operação; proposta criada, decisões finais pendentes.
 6. `seo-e-publicacao.md` — URL final, intenção de cada página, títulos/descrições, páginas locais, sitemap, Search Console e critérios de publicação.
-7. `decisoes.md` — registro curto de decisões Onion: contexto, escolha, motivo, impacto, responsável e data.
+7. [`decisoes.md`](decisoes.md) — registro curto de decisões Onion: contexto, escolha, motivo, impacto, responsável e data; já iniciado.
 8. [`../backlog-e-custos.md`](../backlog-e-custos.md) — etapas, tarefas e dependências; já criado.
 
 ## Preparar quando a respectiva etapa começar
