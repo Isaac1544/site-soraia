@@ -31,4 +31,4 @@ As informações de contato, locais, links e o campo da futura foto profissional
 3. Fazer inventário dos serviços e registros técnicos, finalizar o aviso de privacidade, ativar `PUBLIC_SITE_READY=true` apenas com aprovação, configurar URL canônica, sitemap, `robots.txt` e Search Console.
 4. Validar as páginas em celular e computador, confirmar links, acessibilidade e fluxo de publicação.
 
-O [Business Context Lite](docs/business-context-lite.md), o [Technical Context Lite](docs/technical-context-lite.md), a [lista de pendências](docs/pendencias-de-descoberta.md) e o [guia do Perfil da Empresa no Google](docs/perfil-da-empresa-google.md) registram decisões e próximos passos.
+O [Business Context Lite](docs/business-context-lite.md), o [Technical Context Lite](docs/technical-context-lite.md), a [lista de pendências](docs/pendencias-de-descoberta.md), o [guia de prévia e deploy](docs/guia-preview-e-deploy.md) e o [guia do Perfil da Empresa no Google](docs/perfil-da-empresa-google.md) registram decisões e próximos passos.
