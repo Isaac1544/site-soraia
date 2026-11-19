@@ -1,0 +1,9 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageIntro from '../components/PageIntro.astro';
+import { site } from '../data/site';
+---
+<BaseLayout title="Privacidade" description="Informações preliminares sobre privacidade e canais de contato do site de Soraia Medeiros.">
+  <PageIntro eyebrow="Privacidade" title="Cuidado também com as suas informações." description="Esta página apresenta a proposta inicial de tratamento de dados do site. O texto será revisado conforme os serviços efetivamente ativados antes da publicação." />
+  <section class="section"><div class="container article-copy"><h2>Contato</h2><p>O site oferece links para WhatsApp, Instagram e e-mail. Ao usá-los, você acessa os serviços correspondentes, que possuem suas próprias práticas de privacidade. Esta primeira versão não possui formulário de pré-atendimento ou agenda.</p><h2>Navegação</h2><p>A hospedagem poderá processar dados técnicos necessários à entrega e à segurança do site, como endereço IP e registros de acesso. Antes da publicação, os serviços ativados e seus prazos de retenção serão conferidos para completar este aviso.</p><h2>Seus direitos</h2><p>Para dúvidas sobre privacidade e solicitações relacionadas aos seus dados, escreva para <a href={`mailto:${site.email}`}>{site.email}</a>.</p><h2>Versão em revisão</h2><p>Este aviso é uma minuta para a prévia do site. Ele precisa da revisão final da profissional e do inventário técnico antes do lançamento público.</p></div></section>
+</BaseLayout>

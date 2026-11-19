@@ -1,0 +1,44 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ContactBand from '../components/ContactBand.astro';
+import PortraitPanel from '../components/PortraitPanel.astro';
+import { themes } from '../data/site';
+---
+<BaseLayout title="Psicoterapia para diferentes momentos da vida" description="Conheça a atuação de Soraia Medeiros, psicóloga. Atendimento individual online e presencial na Avenida Paulista e em Alphaville.">
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <p class="eyebrow">Soraia Medeiros · Psicóloga</p>
+        <h1>Um espaço para compreender emoções e atravessar mudanças.</h1>
+        <p class="lead">Psicologia para mulheres que desejam compreender suas emoções, atravessar mudanças e construir uma vida com mais significado.</p>
+        <p>O atendimento psicológico individual é aberto a pessoas adultas de todos os gêneros, com atenção especial às experiências e aos ciclos de vida das mulheres.</p>
+        <div class="button-row"><a class="button button-primary" href="/contato/">Entrar em contato</a><a class="button button-outline" href="/psicoterapia/">Conhecer a psicoterapia</a></div>
+        <small class="hero-side-note">Atendimento online e presencial em São Paulo e Alphaville, mediante contato prévio.</small>
+      </div>
+      <PortraitPanel />
+    </div>
+  </section>
+
+  <section class="section section-white" aria-labelledby="apresentacao">
+    <div class="container split">
+      <div><p class="eyebrow">Sobre o atendimento</p><h2 id="apresentacao">Escuta para cada etapa da trajetória.</h2></div>
+      <div><p class="lead">A psicoterapia oferece um espaço de conversa sobre questões emocionais, relacionamentos, trabalho e transformações da vida.</p><p>Há momentos em que as escolhas, responsabilidades e mudanças pedem uma pausa para olhar com mais cuidado para a própria experiência.</p><a class="text-link" href="/sobre/">Conheça Soraia Medeiros</a></div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="temas">
+    <div class="container">
+      <div class="section-heading"><p class="eyebrow">Temas de atuação</p><h2 id="temas">Assuntos que podem encontrar espaço na terapia.</h2><p>Estas são algumas das questões que podem fazer parte do processo terapêutico. Cada história é considerada em sua singularidade.</p></div>
+      <div class="theme-grid">{themes.map((theme) => <article class="theme-card"><h3>{theme.title}</h3><p>{theme.description}</p></article>)}</div>
+      <div class="button-row"><a class="button button-outline" href="/psicoterapia/">Saiba mais sobre esses temas</a></div>
+    </div>
+  </section>
+
+  <section class="section section-sand" aria-labelledby="modalidades">
+    <div class="container split">
+      <div><p class="eyebrow">Modalidades</p><h2 id="modalidades">O cuidado também precisa caber na sua rotina.</h2><p>As sessões são individuais, em português, com duração de 50 minutos. A modalidade e os horários são conversados conforme a disponibilidade.</p></div>
+      <div class="info-panel"><p class="eyebrow">Como atender</p><h3>Online</h3><p>Um encontro à distância, em ambiente reservado, para pessoas adultas.</p><a href="/atendimento-online/">Entenda o atendimento online</a><hr /><h3>Presencial</h3><p>Consultórios na Avenida Paulista, em São Paulo, e em Alphaville, Barueri.</p><a href="/atendimento-presencial/">Veja os locais de atendimento</a></div>
+    </div>
+  </section>
+  <ContactBand />
+</BaseLayout>

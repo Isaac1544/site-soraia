@@ -4,13 +4,14 @@ A resposta da Soraia confirmou nome/CRP, abordagem declarada, formação e exper
 
 ## Para lançar o site simples
 
-1. **Aceite da ordem de entrega:** a cliente pediu pré-agendamento no site, enquanto o planejamento propõe lançar primeiro páginas e links, depois formulário e agenda. Apresentar cronograma e registrar concordância.
-2. **Fotos:** receber originais e autorização para uso. As duas artes atuais não são fotografias limpas para o layout.
+1. **Ordem de entrega:** aceita pela cliente em 18/11/2026: site institucional primeiro, formulário e agenda em etapas posteriores.
+2. **Fotos:** receber originais e autorização para uso. A cliente pretende fotografar o consultório na semana seguinte à resposta de 18/11; confirmar também retratos da profissional. As duas artes atuais não são fotografias limpas para o layout.
 3. **Conteúdo profissional:** confirmar o nome completo ou social que deve acompanhar “psicóloga” e CRP na identificação pública; revisar apresentação, abordagem integrada, títulos, experiência corporativa, serviços online para residentes no exterior e textos de cada página pela Soraia. Validar a frase “Psicologia para mulheres...” junto de texto que informe o atendimento inclusivo e não exclusivo; aprovar a redação de cada um dos seis temas. Confirmar eventuais exigências éticas/jurisdicionais para atendimento internacional antes de comunicar alcance irrestrito.
-4. **Endereços:** confirmar salas/conjuntos, instruções de chegada, dias de atendimento em cada local e se os endereços podem ser divulgados publicamente.
-5. **Domínio e publicação:** `soraiamedeiros.com.br` apareceu disponível no Registro.br em 12/11/2026; perguntar se já há outro domínio/site, confirmar o nome desejado, titular CPF/CNPJ, registrar antes que a disponibilidade mude e obter acesso técnico à conta Cloudflare/DNS. A stack Astro + GitHub + Cloudflare Workers já está definida tecnicamente para o MVP. Ver [domínio e contas](dominio-e-contas.md). Google AI Studio pode ser usado como apoio à construção, sem integrar a execução do site.
+4. **Endereços:** a cliente autorizou divulgar os dois endereços sem sala/conjunto. Receber orientações gerais de chegada e confirmar dias de atendimento em cada local; detalhes de sala seguem apenas no contato direto.
+5. **Domínio e publicação:** a cliente não tem domínio e aceita `soraiamedeiros.com.br` se disponível. Reconferir disponibilidade no Registro.br, definir titular CPF/CNPJ, registrar e obter acesso técnico à conta Cloudflare/DNS. A stack Astro + GitHub + Cloudflare Workers já está definida tecnicamente para o MVP. Ver [domínio e contas](dominio-e-contas.md). Google AI Studio pode ser usado como apoio à construção, sem integrar a execução do site.
 6. **Operação do site:** definir quem terá acesso ao repositório, hospedagem e domínio, revisará PRs/previews, fará alterações e pagará renovação/manutenção.
 7. **Privacidade do MVP:** Cloudflare foi escolhida como hospedagem; verificar os registros técnicos, cookies e recursos externos realmente ativados e redigir o aviso correspondente; não instalar analytics/pixels por padrão.
+8. **Perfil da Empresa no Google:** verificar se já existe um perfil da Soraia e se cada consultório atende aos critérios do Google antes de criar/reivindicar perfis. Ver [guia](perfil-da-empresa-google.md).
 
 ## Para incluir formulário
 

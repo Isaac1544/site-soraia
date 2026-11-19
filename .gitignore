@@ -27,6 +27,7 @@ public/images/referencias/
 
 # Dependencias, compilacao e arquivos da maquina
 node_modules/
+.pnpm-store/
 .next/
 .astro/
 .cache/

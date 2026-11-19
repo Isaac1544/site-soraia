@@ -29,7 +29,7 @@ flowchart LR
 
 1. Escrever requisito curto e critério de aceite no backlog/knowledge base. Exemplo: “O botão WhatsApp abre conversa com o número aprovado em celular e computador”.
 2. Criar branch para uma tarefa. Código gerado por IA entra como qualquer outro código: revisão de conteúdo, dependências, acessibilidade, segurança e privacidade.
-3. Abrir PR pequeno. CI roda no GitHub Actions: `npm ci`, checagens de tipos/lint e `npm run build`; testes focados quando houver lógica relevante. Incluir verificação de links internos e ausência de segredos no processo de revisão.
+3. Abrir PR pequeno. CI roda no GitHub Actions: `pnpm install --frozen-lockfile`, `pnpm run check` e `pnpm run build`; testes focados quando houver lógica relevante. Incluir verificação de links internos e ausência de segredos no processo de revisão.
 4. Conferir preview do Cloudflare no celular e computador: texto, contraste, navegação por teclado, carregamento, links externos e conteúdo aprovado. A Soraia revisa a comunicação pública antes do primeiro lançamento.
 5. Fazer merge em `main`; Cloudflare Workers Builds constrói e publica. A integração Git fornece status de build e URLs de preview por branch. Não adicionar outro workflow de deploy em paralelo.
 6. No domínio final, verificar HTTPS, redirecionamento, páginas, WhatsApp/Instagram, `robots.txt`, sitemap, Search Console e rastreamento. O Google pode levar tempo para indexar; envio do sitemap não garante posição.

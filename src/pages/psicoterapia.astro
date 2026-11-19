@@ -1,0 +1,12 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageIntro from '../components/PageIntro.astro';
+import ContactBand from '../components/ContactBand.astro';
+import { themes } from '../data/site';
+---
+<BaseLayout title="Psicoterapia e temas de atuação" description="Psicoterapia individual para pessoas adultas. Conheça temas como ansiedade, mudanças de vida, relações, maturidade e autoconhecimento.">
+  <PageIntro eyebrow="Psicoterapia" title="Um espaço para olhar para o que você está vivendo." description="O atendimento psicológico individual acolhe pessoas adultas em diferentes momentos. Os temas abaixo são possibilidades de conversa, não uma lista fechada de motivos para buscar terapia." />
+  <section class="section"><div class="container"><div class="theme-grid">{themes.map((theme) => <article class="theme-card"><h2 style="font-size: clamp(1.55rem, 2vw, 2rem)">{theme.title}</h2><p>{theme.description}</p></article>)}</div></div></section>
+  <section class="section section-white"><div class="container split"><div><p class="eyebrow">Como funciona</p><h2>O primeiro passo é uma conversa.</h2></div><div><p class="lead">O contato inicial permite esclarecer dúvidas sobre modalidade, local e disponibilidade. A sessão tem duração de 50 minutos e acontece online ou presencialmente.</p><p>Buscar atendimento não exige ter uma resposta pronta sobre o que está acontecendo. As questões podem ser compreendidas ao longo do processo.</p><a class="text-link" href="/contato/">Veja os canais de contato</a></div></div></section>
+  <ContactBand />
+</BaseLayout>

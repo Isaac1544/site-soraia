@@ -1,5 +1,13 @@
 # Registro de decisões — Soraia Medeiros
 
+## 18/11/2026 — Recorte da versão 1 e endereços
+
+**Resposta da cliente:** aprovou lançar primeiro o site institucional, com formulário e agenda em etapas seguintes. Confirmou que não possui domínio e aceita `soraiamedeiros.com.br` se disponível. Autorizou divulgar os endereços da Avenida Paulista e de Alphaville sem sala/conjunto; os detalhes de acesso são passados diretamente após combinar o atendimento. Pretende fotografar o consultório na semana seguinte e deseja orientações de chegada e presença no Perfil da Empresa no Google.
+
+**Implementação:** código local Astro iniciado, usando `pnpm` com lockfile, fotos substituíveis e conteúdo provisório não indexável. Os links “Ver trajeto” apontam para a busca dos endereços no Google Maps; a criação/reivindicação de perfis comerciais é uma tarefa separada, sujeita a elegibilidade e verificação pela cliente. DNS e domínio não bloqueiam o desenvolvimento local, mas são necessários para o endereço próprio na publicação.
+
+**Pendentes:** identificação profissional exata para a publicação, fotos originais e direitos, instruções de chegada, revisão de textos e aviso de privacidade, registro do domínio, conta Cloudflare da cliente e validação de elegibilidade no Google. Ver [pendências](../pendencias-de-descoberta.md) e [guia do Perfil da Empresa](../perfil-da-empresa-google.md).
+
 ## 12/11/2026 — Stack e mapa da versão 1
 
 **Contexto:** a primeira entrega prioriza presença institucional, boa experiência em celular e computador, contato manual e base para formulário/agenda futuros. O repositório privado no GitHub já existe.
