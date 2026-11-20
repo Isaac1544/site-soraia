@@ -1,6 +1,6 @@
 # Business Context Lite — Soraia Medeiros
 
-> Versão 0.5 — revisão em 13/11/2026. Fontes: respostas escritas da cliente recebidas pelo desenvolvedor, inclusive atualização de posicionamento em 12/11, e decisões de planejamento posteriores. Fatos profissionais e operacionais são declarações da cliente; revisão final de texto e publicação permanece pendente. **Implementação do site ainda não iniciada.**
+> Versão 0.6 — revisão em 18/11/2026. Fontes: respostas escritas da cliente recebidas pelo desenvolvedor, inclusive atualizações de posicionamento e escopo. Fatos profissionais e operacionais são declarações da cliente; revisão final de texto e publicação permanece pendente. **A primeira versão local do código está em construção.**
 
 ## Negócio e público
 
@@ -34,10 +34,10 @@ A experiência de aproximadamente 19 anos no mercado corporativo, sobretudo nas 
 
 ## Locais e canais
 
-- Avenida Paulista, 1159, São Paulo, SP, próximo à estação Trianon-Masp. Sala/conjunto e instruções de chegada não informados.
-- Avenida Trindade, 254, Bethaville I, Barueri, SP. Sala/conjunto e instruções de chegada não informados.
+- Avenida Paulista, 1159, São Paulo, SP, próximo à estação Trianon-Masp. A cliente autorizou divulgar o endereço sem sala/conjunto; esse detalhe é informado diretamente após combinar o atendimento.
+- Avenida Trindade, 254, Bethaville I, Barueri, SP. A cliente autorizou divulgar o endereço sem sala/conjunto; esse detalhe é informado diretamente após combinar o atendimento.
 - WhatsApp: +55 17 98167-1880. E-mail: soraiamedeiros.psic@icloud.com. Instagram: @soraiamedeiros.psic.
-- Domínio pretendido: `soraiamedeiros.com.br`; [disponível no Registro.br](https://registro.br/busca-dominio/?fqdn=soraiamedeiros.com.br) em consulta de 12/11/2026 por R$ 40 no primeiro ano. Ainda não registrado; titularidade e eventual domínio anterior da cliente dependem de confirmação. Ver [domínio e contas](dominio-e-contas.md).
+- Domínio pretendido: `soraiamedeiros.com.br`; a cliente confirmou em 18/11/2026 que não possui domínio e aceita este nome se estiver disponível. A disponibilidade observada em 12/11 deve ser reconferida no momento do registro. Ver [domínio e contas](dominio-e-contas.md).
 
 ## Jornada desejada e recorte de lançamento
 
@@ -51,7 +51,7 @@ Jornada final desejada: conhecer a profissional → entender modalidade e local 
 
 **Evolução 3:** blog ativo, SEO contínuo, gestão de contatos e automações de agendamento/marketing após avaliação de necessidade e privacidade.
 
-O recorte em etapas é proposta do desenvolvedor em 10/11/2026 e deve ser apresentado à cliente, pois desloca o pré-agendamento solicitado para depois do primeiro lançamento.
+O recorte em etapas foi aceito pela cliente em 18/11/2026. O formulário de pré-atendimento e a agenda continuam no backlog para entregas posteriores.
 
 ## Disponibilidade informada para a agenda futura
 
@@ -71,7 +71,7 @@ Solicitações devem chegar ao e-mail da profissional, com acesso restrito. Dest
 
 ## Identidade e descoberta
 
-Visual aprovado em conceito: profissional, acolhedor, sofisticado, contemporâneo e minimalista, em tons neutros, bege e off-white, detalhes suaves em dourado ou verde, tipografia refinada, fotos naturais e espaço visual. Dar apelo especial ao público feminino sem usar linguagem ou elementos que comuniquem exclusividade. A [paleta base](knowledge-base/identidade-e-ativos.md) foi definida tecnicamente em 13/11/2026; os códigos exatos ainda não foram aprovados pela cliente. Ela enviará fotos originais; as artes atuais são referências.
+Visual aprovado em conceito: profissional, acolhedor, sofisticado, contemporâneo e minimalista, em tons neutros, bege e off-white, detalhes suaves em dourado ou verde, tipografia refinada, fotos naturais e espaço visual. Dar apelo especial ao público feminino sem usar linguagem ou elementos que comuniquem exclusividade. A [paleta base](knowledge-base/identidade-e-ativos.md) foi definida tecnicamente em 13/11/2026; os códigos exatos ainda não foram aprovados pela cliente. Ela pretende fotografar o consultório na semana seguinte à resposta de 18/11; fotos originais da profissional e dos ambientes e autorização de uso seguem pendentes. As artes atuais são referências.
 
 SEO pretendido: buscas por psicóloga em São Paulo, Avenida Paulista, Alphaville/Barueri, online, online para brasileiros no exterior e temas informados pela cliente. No MVP, apresentar os seis temas em conteúdo útil e revisado, sem criar seis páginas superficiais apenas por palavra-chave. Páginas temáticas ou artigos entram quando houver conteúdo próprio aprovado. Criar páginas úteis e distintas, SEO técnico e Search Console. Blog inicialmente preparado para o futuro. Presença no Google não implica posição garantida.
 
@@ -85,10 +85,10 @@ SEO pretendido: buscas por psicóloga em São Paulo, Avenida Paulista, Alphavill
 4. **Depois do formulário:** criar agenda com horários reais, conversão de fuso e aprovação manual. O painel administrativo exige autenticação e prevenção de conflitos de horário.
 5. **Crescimento:** publicar artigos revisados pela Soraia e acompanhar buscas e páginas no Search Console para orientar melhorias de conteúdo.
 
-**Capacidade de execução:** o desenvolvedor e o assistente podem construir o site com apoio de IA, usando este contexto, o [backlog](backlog-e-custos.md) e o [Technical Context Lite](technical-context-lite.md) como especificação, revisando cada entrega antes de publicar. A stack e a hospedagem foram escolhidas tecnicamente para o MVP; a conta Cloudflare, o domínio, o aceite da ordem de entregas e o conteúdo público ainda dependem de ações e revisão. O esqueleto do código pode começar com conteúdo provisório claramente marcado, sem publicá-lo como site final.
+**Capacidade de execução:** o desenvolvedor e o assistente iniciaram o código do site com apoio de IA, usando este contexto, o [backlog](backlog-e-custos.md) e o [Technical Context Lite](technical-context-lite.md) como especificação. A stack foi escolhida e o código local foi compilado; a conta Cloudflare, o domínio, o conteúdo público e a publicação ainda dependem de ações e revisão. A ordem de entregas foi aceita pela cliente. O conteúdo atual está marcado como provisório e não deve ser divulgado como versão final.
 
 ## Sucesso e decisões abertas
 
 O visitante deve encontrar serviços, local e contato no celular e no computador. Layout, menus, imagens e textos devem se ajustar à largura da tela, sem corte ou rolagem horizontal; botões e links devem funcionar por toque, mouse e teclado. Páginas devem ser rastreáveis. Nas etapas posteriores, solicitações devem chegar com segurança e a agenda não deve oferecer um slot já reservado ou pendente.
 
-Pendentes: registro e titularidade do domínio, conta Cloudflare e acesso; aceite da ordem de entregas; fotos e autorização; revisão profissional e atendimento internacional; salas/conjuntos; regras completas da agenda; fornecedor do formulário; armazenamento, retenção e aviso de privacidade; confirmação de custos na contratação. Google AI Studio permanece opção de apoio à construção, sem papel obrigatório no site publicado. Consulte [`backlog-e-custos.md`](backlog-e-custos.md).
+Pendentes: registro e titularidade do domínio, conta Cloudflare e acesso; fotos e autorização; revisão profissional e atendimento internacional; instruções de chegada que possam ser divulgadas; regras completas da agenda; fornecedor do formulário; armazenamento, retenção e aviso de privacidade; confirmação de custos na contratação. A inclusão dos locais no Perfil da Empresa no Google depende de conferir elegibilidade e se já há perfis existentes; ver [guia específico](perfil-da-empresa-google.md). Google AI Studio permanece opção de apoio à construção, sem papel obrigatório no site publicado. Consulte [`backlog-e-custos.md`](backlog-e-custos.md).

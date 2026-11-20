@@ -1,0 +1,16 @@
+---
+import { site } from '../data/site';
+interface Props { variant?: 'hero' | 'about'; }
+const { variant = 'hero' } = Astro.props;
+---
+<div class:list={['portrait-panel', `portrait-panel-${variant}`]}>
+  {site.profilePhoto ? (
+    <img src={site.profilePhoto} alt="Retrato de Soraia Medeiros" loading={variant === 'hero' ? 'eager' : 'lazy'} />
+  ) : (
+    <div class="portrait-placeholder">
+      <span class="portrait-initial" aria-hidden="true">S</span>
+      <p>Um espaço para acolher<br />cada história.</p>
+      <small>Fotografia será inserida após seleção e autorização.</small>
+    </div>
+  )}
+</div>

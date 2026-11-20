@@ -1,0 +1,12 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageIntro from '../components/PageIntro.astro';
+import PortraitPanel from '../components/PortraitPanel.astro';
+import ContactBand from '../components/ContactBand.astro';
+---
+<BaseLayout title="Sobre Soraia" description="Conheça a trajetória e a atuação de Soraia Medeiros, psicóloga clínica, CRP 06/216738.">
+  <PageIntro eyebrow="Sobre Soraia" title="Uma trajetória de escuta e atenção às mudanças." description="Conheça a profissional e as experiências que informam sua forma de acolher diferentes momentos da vida adulta." />
+  <section class="section"><div class="container split"><PortraitPanel variant="about" /><div><p class="eyebrow">Soraia Medeiros</p><h2>Psicologia e experiência de vida profissional.</h2><p>Soraia é psicóloga, CRP 06/216738. Sua formação em Psicologia foi concluída em janeiro de 2025 e ela cursa pós-graduação em Neuropsicologia.</p><p>Antes da atuação clínica, construiu uma trajetória de aproximadamente 19 anos no mercado corporativo, especialmente nas áreas comercial e de gestão. Essa experiência integra sua compreensão das questões ligadas ao trabalho, às relações e às transições de carreira.</p><p>Sua atuação reúne referências da Psicologia Existencial, da Análise do Comportamento, da abordagem Fenomenológica e conhecimentos da Neuropsicologia.</p><a class="text-link" href="/psicoterapia/">Conheça os temas de atuação</a></div></div></section>
+  <section class="section section-white"><div class="container narrow"><p class="eyebrow">Atendimento</p><h2>Uma conversa que considera a pessoa inteira.</h2><p class="lead">A escuta clínica pode acompanhar desafios pessoais, profissionais, afetivos e familiares. A forma de trabalhar é apresentada em diálogo, respeitando as particularidades de quem procura atendimento.</p><div class="button-row"><a class="button button-outline" href="/atendimento-online/">Atendimento online</a><a class="button button-outline" href="/atendimento-presencial/">Atendimento presencial</a></div></div></section>
+  <ContactBand />
+</BaseLayout>

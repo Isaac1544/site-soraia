@@ -1,6 +1,6 @@
 # Domínio e titularidade das contas — Soraia Medeiros
 
-> Consulta realizada em 12/11/2026; documento revisado em 13/11/2026. O projeto ainda não contém confirmação de registro do domínio, criação de conta Cloudflare ou pagamento. A disponibilidade pode mudar a qualquer momento.
+> Consulta realizada em 12/11/2026; documento revisado em 18/11/2026. A cliente confirmou que não possui domínio e aceita `soraiamedeiros.com.br` se disponível. O projeto ainda não contém confirmação de registro, criação de conta Cloudflare ou pagamento. A disponibilidade pode mudar a qualquer momento.
 
 ## Resultado da verificação
 
@@ -17,7 +17,7 @@
 
 ## Passo a passo recomendado para registrar
 
-1. Soraia confirma que deseja `soraiamedeiros.com.br` e que não existe domínio anterior a aproveitar. Escolher se o titular será seu CPF ou CNPJ profissional, conforme sua operação.
+1. Soraia já confirmou que não tem domínio e aceita `soraiamedeiros.com.br` se disponível. Escolher se o titular será seu CPF ou CNPJ profissional, conforme sua operação.
 2. Soraia cria/acessa sua conta no [Registro.br](https://registro.br/). Usar e-mail que ela controla e habilitar autenticação em duas etapas. Não compartilhar senha; Isaac pode orientar por chamada ou ser cadastrado como contato técnico depois.
 3. Na [busca do Registro.br](https://registro.br/busca-dominio/?fqdn=soraiamedeiros.com.br), conferir novamente disponibilidade e clicar em **REGISTRAR**.
 4. Informar o **CPF/CNPJ da titular**, dados exigidos e contato administrativo. O campo DNS é opcional no pedido inicial; pode usar provisoriamente o DNS gratuito do Registro.br. Ler e aceitar contrato/política somente se a titular concordar.

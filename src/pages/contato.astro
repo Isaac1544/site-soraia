@@ -1,0 +1,10 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageIntro from '../components/PageIntro.astro';
+import { site } from '../data/site';
+---
+<BaseLayout title="Contato" description="Entre em contato com Soraia Medeiros pelo WhatsApp, e-mail ou Instagram para pedir informações sobre o atendimento.">
+  <PageIntro eyebrow="Contato" title="O primeiro passo pode ser uma mensagem." description="Entre em contato para consultar modalidades, locais e disponibilidade. A sessão é combinada diretamente com a profissional." />
+  <section class="section"><div class="container contact-options"><article class="contact-option"><p class="eyebrow">Mensagem</p><h2>WhatsApp</h2><p>Canal direto para dúvidas e solicitação de atendimento.</p><a href={site.whatsapp} target="_blank" rel="noopener noreferrer">{site.phoneDisplay}</a></article><article class="contact-option"><p class="eyebrow">Escrita</p><h2>E-mail</h2><p>Envie sua mensagem para o endereço profissional.</p><a href={`mailto:${site.email}`}>{site.email}</a></article><article class="contact-option"><p class="eyebrow">Acompanhe</p><h2>Instagram</h2><p>Conheça o perfil profissional da Soraia.</p><a href={site.instagram} target="_blank" rel="noopener noreferrer">@soraiamedeiros.psic</a></article></div></section>
+  <section class="section section-sand"><div class="container narrow"><p class="eyebrow">Sobre o contato</p><h2>Atendimento mediante confirmação.</h2><p class="lead">A mensagem inicial é uma solicitação de informações. Local, horário e continuidade do atendimento são definidos diretamente com a profissional.</p><p>Evite enviar informações clínicas detalhadas por redes sociais ou pelos links desta página.</p></div></section>
+</BaseLayout>

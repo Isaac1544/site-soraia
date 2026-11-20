@@ -1,0 +1,11 @@
+---
+import { site } from '../data/site';
+interface Props { title?: string; text?: string; }
+const { title = 'Podemos conversar sobre o atendimento?', text = 'Entre em contato para tirar dúvidas sobre as modalidades e os próximos passos.' } = Astro.props;
+---
+<section class="contact-band" aria-labelledby="contact-band-heading">
+  <div class="container contact-band-inner">
+    <div><p class="eyebrow">Primeiro contato</p><h2 id="contact-band-heading">{title}</h2><p>{text}</p></div>
+    <a class="button button-light" href={site.whatsapp} target="_blank" rel="noopener noreferrer">Falar pelo WhatsApp</a>
+  </div>
+</section>

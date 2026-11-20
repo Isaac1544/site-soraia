@@ -75,7 +75,7 @@ Esforço em **horas de trabalho**, apenas para comparar dificuldade e planejar e
 
 ## Custos sem mão de obra: cenário econômico com IA
 
-**Arquitetura de referência para cálculo:** a versão 1 usa a stack tecnicamente escolhida: Astro/TypeScript, GitHub e Cloudflare Workers com Static Assets. Para as etapas futuras, Worker/API, Resend e D1 são **exemplos de orçamento**, ainda sem decisão de fornecedor ou desenho final. O site não precisa chamar uma IA quando o visitante o acessa; assim, o custo de inferência de IA em produção pode ser **R$ 0**. O recorte de publicação da versão 1 aguarda aceite da cliente.
+**Arquitetura de referência para cálculo:** a versão 1 usa a stack tecnicamente escolhida: Astro/TypeScript, GitHub e Cloudflare Workers com Static Assets. Para as etapas futuras, Worker/API, Resend e D1 são **exemplos de orçamento**, ainda sem decisão de fornecedor ou desenho final. O site não precisa chamar uma IA quando o visitante o acessa; assim, o custo de inferência de IA em produção pode ser **R$ 0**. O recorte de publicação da versão 1 foi aceito pela cliente em 18/11/2026.
 
 | Estado do projeto | Gasto inicial obrigatório | Mensal mínimo com cotas gratuitas | Cenário pago opcional | Primeiro ano no cenário mínimo |
 |---|---:|---:|---:|---:|
@@ -117,7 +117,7 @@ Os custos em dólar foram mantidos em dólar para não presumir câmbio, imposto
 
 ## Dependências e decisões imediatas
 
-1. Apresentar à Soraia o recorte de lançamento: site simples primeiro, formulário e agenda nas etapas seguintes. Registrar aceite da ordem de entrega.
+1. Concluído em 18/11/2026: Soraia aceitou o recorte de lançamento — site simples primeiro, formulário e agenda nas etapas seguintes.
 2. Obter fotos originais e aprovar textos; confirmar detalhes de sala e possibilidade de divulgar cada endereço.
 3. Confirmar domínio e titular, criar conta Cloudflare da cliente, conceder acesso técnico e conectar o repositório GitHub já existente. Google AI Studio pode apoiar a construção, sem substituir a stack e a hospedagem escolhidas.
 4. Para etapa 2, definir política operacional de dados e se perguntas sobre motivo/expectativas são necessárias no canal público.

@@ -1,6 +1,6 @@
 # Technical Context Lite — Soraia Medeiros
 
-> Versão 0.4 — revisão em 13/11/2026. A stack e o mapa da versão 1 foram fechados como **decisão técnica do projeto** em [registro de decisões](knowledge-base/decisoes.md) e [mapa inicial de páginas](mapa-inicial-de-paginas.md). A cliente ainda precisa aceitar a ordem de entregas e aprovar o conteúdo/publicação. Nenhum site ou pipeline foi implementado. Valores e limites são referências consultadas em 12–13/11/2026; conferir antes de contratar.
+> Versão 0.5 — revisão em 18/11/2026. A stack e o mapa da versão 1 foram fechados como **decisão técnica do projeto** em [registro de decisões](knowledge-base/decisoes.md) e [mapa inicial de páginas](mapa-inicial-de-paginas.md). A cliente aceitou a ordem de entregas. O código local e o workflow de CI foram iniciados; conteúdo e publicação ainda exigem aprovação. Valores e limites são referências consultadas em novembro de 2026; conferir antes de contratar.
 
 ## Resultado a construir e restrições
 
@@ -14,7 +14,7 @@
 
 | Campo | Recomendação agora | Vantagens | Limites / alternativa |
 |---|---|---|---|
-| Frontend | **Astro + TypeScript + CSS nativo**, HTML gerado no build; JavaScript somente onde necessário; `npm` com lockfile | Páginas de conteúdo rápidas, componentes reutilizáveis, HTML rastreável, imagens otimizadas, base simples para IA gerar e revisar | Menos conveniente que Next.js se o produto virar aplicação interativa extensa. Next.js é alternativa quando houver forte necessidade de interface dinâmica/SSR; traz mais complexidade operacional no MVP. |
+| Frontend | **Astro + TypeScript + CSS nativo**, HTML gerado no build; JavaScript somente onde necessário; `pnpm` com lockfile | Páginas de conteúdo rápidas, componentes reutilizáveis, HTML rastreável, base simples para IA gerar e revisar | Menos conveniente que Next.js se o produto virar aplicação interativa extensa. Next.js é alternativa quando houver forte necessidade de interface dinâmica/SSR; traz mais complexidade operacional no MVP. |
 | Repositório | **GitHub privado já existente**, com `main`, branches `codex/` ou `feature/` e pull requests | Evita migração, reúne histórico, revisão e GitHub Actions | GitLab também integra com Cloudflare Workers, mas a migração agora acrescenta trabalho sem benefício identificado. Código privado não torna o site publicado privado. |
 | Hospedagem do MVP | **Cloudflare Workers Free com Static Assets e Workers Builds**, conectado ao GitHub, domínio `.com.br` da cliente | Servir páginas estáticas agora e acrescentar rotas/API depois na mesma plataforma; build/deploy por Git e prévia por branch | Configuração inicial via Wrangler é um pouco mais técnica que Pages; função dinâmica está sujeita a limites. Pages continua alternativa válida para site estritamente estático. Vercel Hobby é restrito a uso pessoal/não comercial; projeto de cliente requer plano adequado. |
 | Tipo de site | **Estático no MVP, sem backend e sem banco de dados** | Menor custo, superfície de ataque e manutenção | Links de contato não organizam triagem. Formulário real exige serviço de processamento e proteção; agenda exige estado persistente. |
@@ -31,14 +31,14 @@ A primeira entrega é predominantemente editorial. Astro favorece conteúdo est�
 
 ## Publicação, ambientes e operação
 
-1. **Local:** desenvolver a partir de especificações versionadas; instalar dependências com lockfile; `npm run build`, checagens de tipos/lint e revisão visual em celular e computador.
+1. **Local:** desenvolver a partir de especificações versionadas; instalar dependências com lockfile; `pnpm run check`, `pnpm run build` e revisão visual em celular e computador.
 2. **Pull request:** GitHub Actions executa checagens; Cloudflare cria prévia da branch. Revisar conteúdo com Soraia em URL de prévia, sem usar dados reais de pacientes.
 3. **Produção:** merge aprovado em `main` aciona Workers Builds e deploy do Worker com os arquivos estáticos. Conectar `soraiamedeiros.com.br` e, se escolhido, `www`; configurar DNS na conta sob titularidade da cliente, HTTPS, redirecionamento canônico e Search Console.
 4. **Pós-publicação:** abrir páginas e links no domínio final, conferir sitemap/robots, indexação inicial, acessibilidade básica, analytics do provedor e monitoramento de erros. Rollback: restaurar uma implantação anterior ou reverter o commit e redeployar; documentar o procedimento antes de lançar.
 
 **Manutenção:** definir responsável por renovação do domínio, acessos com MFA, atualização de dependências e revisão periódica de links, conteúdo, formulários e limites dos serviços. Medir desempenho e acessibilidade em celular e computador; usar como referência [WCAG 2.2 nível AA](https://www.w3.org/TR/WCAG22/), sem declarar conformidade sem auditoria. Para banco futuro, definir migrações, backup/restauração testada e quem acompanha falhas de envio.
 
-Não há pipeline de código ainda: os comandos concretos e o workflow YAML serão escritos quando o projeto Astro existir. Evitar dois mecanismos fazendo deploy simultâneo (Workers Builds e ação de deploy no GitHub). A esteira recomendada usa **GitHub Actions para CI** e **Workers Builds/Git integration para CD**. Ver [guia de CI/CD](ci-cd-guia.md).
+O workflow YAML de GitHub Actions foi criado para checar e compilar o código; a execução no GitHub ainda precisa ser confirmada. A integração Cloudflare para CD não foi configurada. Evitar dois mecanismos fazendo deploy simultâneo (Workers Builds e ação de deploy no GitHub). A esteira recomendada usa **GitHub Actions para CI** e **Workers Builds/Git integration para CD**. Ver [guia de CI/CD](ci-cd-guia.md).
 
 ## Privacidade e segurança
 
@@ -74,12 +74,18 @@ Exibir nome completo ou social confirmado pela profissional, a palavra “psicó
 
 **MVP anual mínimo:** R$ 40, equivalentes contábeis a R$ 3,33/mês, pagos anualmente. **Cenário pago ilustrativo para formulário:** R$ 40/ano + US$ 300/ano (Workers Paid + Resend Pro). Não converter US$ em R$ sem câmbio/impostos da contratação. Os cenários são alternativos, não parcelas cumulativas. Limites e preços podem mudar; não foi feito teste de elegibilidade da conta nem estimativa de tráfego.
 
+### Como funciona o gratuito da Cloudflare
+
+Em 18/11/2026, a Cloudflare descreve o Workers Free como **franquias de uso, não um crédito em dinheiro**: arquivos estáticos servidos por Static Assets têm requisições gratuitas e ilimitadas, enquanto chamadas que executam código de Worker têm limite de 100.000 por dia e 10 ms de CPU por chamada. Workers Builds inclui 3.000 minutos de build por mês no Free. O plano gratuito também limita o número de arquivos estáticos por versão a 20.000. Para o site institucional estático, o uso comum tende a ser de arquivos, sem executar um Worker para cada página; formulário e agenda futuros precisarão reavaliar as cotas. Se uma chamada dinâmica exceder o limite gratuito, pode retornar erro 429, sem compra automática de créditos. O Workers Paid tem cobrança mínima de US$ 5/mês e adicionais por uso; ao migrar, configurar limite de gastos e alertas.
+
+Referências: [Static Assets: cobrança](https://developers.cloudflare.com/workers/static-assets/billing-and-limitations/), [Workers: limites](https://developers.cloudflare.com/workers/platform/limits/), [Workers Builds: limites](https://developers.cloudflare.com/workers/ci-cd/builds/limits-and-pricing/) e [Workers: preços](https://developers.cloudflare.com/workers/platform/pricing/). Reconfirmar no momento de criar a conta.
+
 Fontes: [Registro.br](https://registro.br/dominio/), [Cloudflare Workers: preços](https://developers.cloudflare.com/workers/platform/pricing/), [Static Assets: cobrança](https://developers.cloudflare.com/workers/static-assets/billing-and-limitations/), [Workers Builds: limites](https://developers.cloudflare.com/workers/ci-cd/builds/limits-and-pricing/), [Cloudflare D1](https://developers.cloudflare.com/d1/platform/pricing/), [Cloudflare Turnstile](https://developers.cloudflare.com/turnstile/plans/), [Resend](https://resend.com/pricing), [GitHub Actions](https://docs.github.com/en/billing/concepts/product-billing/github-actions). No Free, requisições a arquivos estáticos não geram cobrança; Workers Builds inclui 3.000 minutos de build/mês, e a execução dinâmica tem cota própria. Em 13/11/2026, o GitHub Free apresenta **US$ 12/mês de computação incluída** para Actions, em vez de uma franquia expressa como quantidade fixa de minutos; monitorar consumo, armazenamento e orçamento da conta do titular.
 
 ## Decisões abertas antes de implementar e publicar
 
-1. A stack e o [mapa de sete páginas](mapa-inicial-de-paginas.md) estão definidos para orientar o código. Confirmar com a cliente a ordem de entrega: MVP com contato manual → formulário → agenda, pois o pedido original incluía pré-atendimento e horários.
-2. `soraiamedeiros.com.br` apareceu [disponível na consulta de 12/11/2026](https://registro.br/busca-dominio/?fqdn=soraiamedeiros.com.br); confirmar se a cliente possui outro domínio, reconferir disponibilidade e registrar em nome dela se escolhido. Ver [domínio e contas](dominio-e-contas.md). Identificar titular da conta Cloudflare, acesso e pagamento.
+1. A stack e o [mapa de sete páginas](mapa-inicial-de-paginas.md) estão definidos e a ordem MVP com contato manual → formulário → agenda foi aceita em 18/11/2026. Falta revisão do conteúdo, visual e privacidade antes da publicação.
+2. A cliente confirmou que não possui domínio e aceita `soraiamedeiros.com.br` se disponível. Reconferir no registro, contratar em nome dela e configurar DNS/Cloudflare antes de usar o endereço próprio. Ver [domínio e contas](dominio-e-contas.md). Identificar titular da conta Cloudflare, acesso e pagamento.
 3. Aprovar textos inclusivos, frase central em seu contexto, fotos originais/licença e endereços publicáveis antes do lançamento.
 4. Aplicar o [fluxo de autorização de publicação](knowledge-base/decisoes.md): Soraia revisa URL da prévia e aprova conteúdo/divulgação; Isaac valida CI, faz merge e confere deploy. Definir quem terá acesso de merge e publicação nas contas.
 5. Antes do formulário: campos obrigatórios, se há perguntas abertas, destino do e-mail, retenção, exclusão e fornecedores aceitos.
