@@ -28,6 +28,6 @@
 
 **Contexto:** a cliente aprovou o estilo sofisticado, acolhedor e contemporâneo, com neutros, bege, off-white e detalhes suaves em dourado ou verde. As artes recebidas usam oliva profundo e dourado.
 
-**Decisão de design para implementar:** adotar a [paleta e os tokens de uso](identidade-e-ativos.md): marfim `#F7F4EF`, branco quente `#FFFDF9`, bege `#E9DFD1`, oliva `#354437`, grafite `#2F342F`, sálvia `#A5AA99` e dourado `#B49A70`, com variações funcionais para texto, link e hover. O dourado fica em detalhes decorativos por baixo contraste sobre fundos claros.
+**Decisão de design para implementar (ajustada em 19/11/2026):** adotar a [paleta e os tokens de uso](identidade-e-ativos.md): marfim rosado `#F8F1EE`, branco quente `#FFFAF7`, bege rosado `#EDE1DC`, verde suave `#506858`, grafite `#2F342F`, sálvia clara `#B4C2B2` e dourado `#B49A70`, com variações funcionais para texto, link e hover. O dourado fica em detalhes decorativos por baixo contraste sobre fundos claros. Códigos exatos ainda sujeitos à validação da cliente.
 
 **Limite:** os códigos exatos são uma proposta técnica para a primeira versão navegável; a Soraia ainda precisa aprovar o resultado visual com fotos reais antes da publicação.
